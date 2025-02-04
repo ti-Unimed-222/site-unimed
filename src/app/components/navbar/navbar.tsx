@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* Logo */}
           <div className="flex items-center gap-4">
-            <Image src = {logo} alt="Logo" height={140} width={140}/>
+            <Image src = {logo} alt="Logo" height={170} width={170}/>
             <div className='navbar-link'>
             <ul className="flex space-x-6 text-gray font-medium">
           

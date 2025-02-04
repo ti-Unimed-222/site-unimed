@@ -1,11 +1,18 @@
+'use client';
+import React, {useState} from "react";
 import Image from "next/image";
 import Navbar from "./components/navbar/navbar"
-import React from 'react'
+import ImageCarousel from "./carrossel/carrossel";
+
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <Navbar />
+
+      <div className="carrossel">
+          <ImageCarousel></ImageCarousel>
+      </div>
     </div>
   
 
