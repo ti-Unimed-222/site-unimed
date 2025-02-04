@@ -20,30 +20,27 @@ export default function Navbar() {
             <div className='navbar-link'>
             <ul className="flex space-x-6 text-gray font-medium">
           
-            <li><a href="#home" className="hover:text-gray-300">Unimed Palmas</a></li>
-            <li><a href="#servicos" className="hover:text-gray-300">Serviços</a></li>
-            <li><a href="#programas" className="hover:text-gray-300">Programas</a></li>
-            <li><a href="#planos" className="hover:text-gray-300">Planos</a></li>
+            <li><a href="#home">Unimed Palmas</a></li>
+            <li><a href="#servicos" >Serviços</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#planos">Planos</a></li>
           </ul>
           </div>
           </div>
           
-          {/* Search & Login */}
-          <div className='search'>
-          <div className= "flex items-center space-x-4"/**/>
-            <input
+            {/* Search & Login */}
+
+            <input className='search'
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="px-7 py-2 rounded-md text-black"
-              placeholder="Faça sua pesquisa aqui"
+              placeholder="Busca"
             />
             <button className="login">
               Login
             </button>
-          </div>
-          </div>
-        </div>
+            </div>
+
       </nav>
     );
   }
