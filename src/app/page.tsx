@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "./components/navbar"
+import Navbar from "./components/navbar/navbar"
 import React from 'react'
 
 export default function Home() {
@@ -7,5 +7,6 @@ export default function Home() {
     <div>
       <Navbar />
     </div>
+
   );
 }
