@@ -1,13 +1,35 @@
 /* Container principal da Navbar */
 .navbar {
-  background-color: #064d1d;
-  color: white;
+  background-color: #ddd;
+  color: darkslategray;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
 }
 
+.navbar:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+.navbar-link {
+  color: darkslategrey;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+  transition: transform 0.2s ease; /* Transição suave */
+}
+
+/* Efeito ao clicar no link */
+.navbar-link:active {
+  transform: scale(1.1); /* Aumenta o tamanho do texto */
+}
 .logo {
   display: flex;
   align-items: center;
@@ -25,6 +47,18 @@
   list-style: none;
 }
 
+.nav {
+  flex: center;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginandcenter {
+  font-size: 4px;
+}
+
 .navbar-links a {
   text-decoration: none;
   color: darkgrey;
@@ -36,7 +70,7 @@
   color: #c4f3c9;
 }
 
-.search-login {
+.search {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -50,15 +84,15 @@
   width: 200px;
 }
 
-.login-btn {
-  background-color: white;
-  color: #064d1d;
+.login {
+  background-color: #064d1d;
+  color: aliceblue;
   padding: 8px 15px;
   border-radius: 5px;
   font-size: 14px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s ease;;
 }
 
 .login-btn:hover {
