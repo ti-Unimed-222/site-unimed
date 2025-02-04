@@ -24,7 +24,7 @@
   font-size: 20px;
   text-decoration: none;
   padding: 5px;
-  transition: transform 0.2s ease; /* Transição suave */
+  transition: transform 0.4s ease; /* Transição suave */
 }
 
 /* Efeito ao clicar no link */

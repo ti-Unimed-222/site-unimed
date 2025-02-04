@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./carrossel.css";
 
 const images = [
-  'https://wallpapers.com/images/hd/3840x1080-pictures-mweskuy056nv0cjr.jpg',
-  'https://wallpapers.com/images/hd/3840x1080-pictures-mweskuy056nv0cjr.jpg',
-  'https://wallpapers.com/images/hd/3840x1080-pictures-mweskuy056nv0cjr.jpg'
+  'https://unimedpalmas.coop.br/public/img/BannerPrincipal/139cabbe01963eb9280bb268a945177b.jpg',
+  'https://unimedpalmas.coop.br/public/img/BannerNoticias/234/4591b67c2d2f4d5ae675e54fe82c254d.png',
+  'https://unimedpalmas.coop.br/public/img/BannerNoticias/216/d72c2116e43854a6f49102b8f62d850b.jpg'
 ];
 
 const Carousel: React.FC = () => {
