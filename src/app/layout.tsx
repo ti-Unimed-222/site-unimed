@@ -9,8 +9,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <head>
+        <link rel="icon" href="./unimed.ico">
+        </link>
+      </head>
+      <body>
         {children}
       </body>
     </html>

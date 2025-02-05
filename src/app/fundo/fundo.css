@@ -1,16 +1,18 @@
 .fundo {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh; /* A altura pode ser ajustada conforme necessário */
 }
 
 .imagem {
     position: relative;
-    width: 100%;
-    height: 700;
+    width: 100vw;
+    height: 590px;
     background-image: url('./fundo.png'); /* Substitua pelo caminho correto da imagem */
-    background-size: cover; /* A imagem vai cobrir todo o container */
-    background-position: center; /* A imagem será centralizada */
+    background-size: 50cm; /* A imagem vai cobrir todo o container */
+
+    background-position: center top; /* A imagem será centralizada */
+    background-repeat: no repeat ;
     
 }
 
@@ -24,27 +26,49 @@
     z-index: 1; /* Garante que o overlay fique acima da imagem */
 }
 
-.text1, .text2 {
+.text1, .text2, .text11, .text22  {
     position: relative;
     z-index: 2; /* Garante que o texto fique acima da sobreposição */
     color: white; /* Torna o texto branco para contraste */
     padding: 20px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 100;
-    
+    margin-left: 350;
+    list-style-type: none; 
+    padding-top: 10px;
 }
 
-.text1 {
+
+.text11 {
+    padding-top: 10px;
     font-size: 40px;
     font-weight: 600;
     
+}
+
+.text1, .text11 {
+    line-height: 4px;
+}
+
+.text1 {
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 600;
     
 }
 
 .text2 {
-    font-size: 24px;
-    font-weight: 100;
+    font-size: 17px;
+    margin-top:35px;
+}
+
+.text22 {
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+.text2, .text22 {
+    line-height: 1px;
 }
 
 .botão {
@@ -55,18 +79,22 @@
     color: white;
     border: 1px solid white;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 6px 16px;
     cursor: pointer;
     display: block;
     margin: 20px auto;
-    margin-left: 120px;
-    font-weight: 600;
+    margin-left: 370px;
+    font-weight: bolder;
+    margin-top: 9px;
+    font-size: 13px;
 }
 
 button:hover {
-    background-color: rgb(78, 138, 54); /* Muda a cor de fundo ao passar o mouse */
-    color: rgb(35, 73, 20);
+    background-color: rgb(102, 168, 75); /* Muda a cor de fundo ao passar o mouse */
+    border: 1px solid rgb(102,168,75);
+    color: rgb(24, 53, 12);
     font-weight: 600;
+    transition: 300ms;
   }
 
 .containers {
