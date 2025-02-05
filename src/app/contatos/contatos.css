@@ -1,0 +1,16 @@
+.container-contatos {
+    display: flex;
+/* Espaço entre as imagens */
+    justify-content: center; 
+    flex-wrap: wrap; /* Para manter o layout responsivo */
+    list-style: none;
+    padding: 0;
+    margin-right: 8;
+    margin-top: 20px;
+    width: 100%;
+    gap:8px;
+
+
+  }
+  
+ 
