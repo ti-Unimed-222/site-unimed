@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar/navbar"
 import ImageCarousel from "./carrossel/carrossel";
 import Contatos from "./contatos/contatos";
+import Fundo from "./fundo/fundo";
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
 
       <div className="Contatos">
         <Contatos />
+      </div>
+
+      <div className="fundo">
+        <Fundo />
       </div>
     </div>
   
