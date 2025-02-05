@@ -2,7 +2,7 @@
   display: flex;
   overflow: hidden;
   justify-content: center;
-  margin-top: 170px;
+  margin-top: 130px;
 }
   .carousel-track {
     display: flex;
@@ -11,7 +11,7 @@
   
   .carousel-image {
     width: 100%;
-    height: auto;
+    height: 470;
     max-width: 100%;
     max-height: 100%;
     flex-shrink: 0;
