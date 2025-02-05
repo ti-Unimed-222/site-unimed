@@ -8,6 +8,8 @@ import Sos from './sos.png'
 import Contato from './contatos.png';
 import Sac from './sac.png';
 import Whats from './whatsapp.png'
+import Baner from './vemserunimed.png';
+
 
 export default function Contatos() {
     return (
@@ -32,6 +34,11 @@ export default function Contatos() {
                 <Image src= {Contratar} alt="contratar" height={280} width={280}>
                 </Image>
             </a></li>
+            <li className="baner"><a href="https://platform.senior.com.br/hcmrs/hcm/curriculo/?tenant=unimedblumenau&tenantdomain=unimedblumenau.com.br#!/vacancies/list" target="_blank" rel="noopener noreferrer">
+                <Image src= {Baner} alt="contratar">
+                </Image>
+            </a></li>
+
         </div>
     );
 }
