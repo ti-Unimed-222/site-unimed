@@ -47,7 +47,6 @@ export default function Servicos () {
                 </a>
                 </li>
             </div>
-                <button className="button"><a href="mais servicos" target="_blank" rel="noopener noreferrer"> CLIQUE AQUI E CONFIRA MAIS SERVIÇOS</a></button>
         </div>
 
     );

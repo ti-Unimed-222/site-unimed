@@ -15,13 +15,12 @@ const Fundo = () => {
                 {/* {<Image src={Imagem} width={10000} />} */}
                 <div className="overlay"></div>
                 <div className="planos">
-                    <li className="text1"><br /><h1>Cuidar de você.</h1></li>
-                    <li className="text11"><br /><h1>Esse é o plano.</h1></li>
-                    <li className="text2">
-                        <h3>Escolha seu perfil e faça uma simulação para encontrar o<br />
-                            <span style={{ display: 'block', marginTop: '18px' }} /> melhor plano pra você.
+                    <li className="text1"><br /><h1>Cuidar de você.<br />Esse é o plano.</h1></li>
+
+                        <li className='text2'><h3>Escolha seu perfil e faça uma simulação para encontrar o<br />
+                            melhor plano pra você.
                         </h3>
-                    </li>
+                        </li>
                     <button className="botão">
                         <a href="https://preproducao.unimed.coop.br/site/planos" target="_blank" rel="noopener noreferrer">
                             Ver todos os planos
@@ -39,8 +38,8 @@ const Fundo = () => {
                             <Image src={Familia} alt="familia" style={{ border: '5px', borderTopLeftRadius: '6px', borderTopRightRadius: '6px' }} />
                             <li className="texto1">
                                 <h3>Plano individual ou familiar para<br />
-                                    <span style={{ display: 'block', marginTop: '0px' }} /> cuidar bem da sua saúde e da<br />
-                                    <span style={{ display: 'block', marginTop: '0px' }} /> saúde de quem você ama.
+                                    cuidar bem da sua saúde e da<br />
+                                    saúde de quem você ama.
                                 </h3>
                             </li>
                             <button className="saibamais">

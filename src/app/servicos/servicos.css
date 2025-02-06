@@ -1,10 +1,12 @@
 .servicos-container {
     position: relative;
-    width: 100vw;  /* 100% da largura da viewport */
+    width: 100%;  /* 100% da largura da viewport */
     margin-top: -130;
     justify-content: center;  /* Alinha os itens horizontalmente */
     align-items: center;      /* Alinha os itens verticalmente */
     overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+
+    
   }
   
   .baner {
@@ -13,9 +15,12 @@
     max-width: 100%;
     object-fit: cover; /* Garante que a imagem cubra toda a área do banner */
     flex-shrink: 0;
-    display: block;
+    display: flex;
     position: relative;
     margin-bottom: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .services-items {
@@ -27,6 +32,7 @@
     margin-top: -50px; 
     gap: 80;
     transform: scale(0.7);
+    
   }
 
   .boleto {
@@ -46,7 +52,7 @@
    }
 
   .fale{
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   .atendimento {
@@ -54,23 +60,5 @@
   }
 
 
-  .button {
-    margin-top: -20;
-    margin-left: 800;
-    border:1px solid #2b8046;
-    padding: 9px 50px;
-    border-radius: 4px;
-    background-color: #2b8046;
-    color: white;
-    font-weight: bolder;
-    margin-bottom: 50px;
-  }
-
-  .button:hover {
-    background-color: #174b27;
-    color: white;
-    transition: 500ms ease-in-out;
-
-  }
 
 

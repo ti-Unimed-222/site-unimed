@@ -7,6 +7,8 @@ import Contatos from "./home/contatos/contatos";
 import Fundo from "./home/fundo/fundo";
 import Servicos from "./servicos/servicos";
 import Container from "./home/container/container";
+import Blog from './blog.png'
+
 
 export default function Home() {
   return (
@@ -32,6 +34,13 @@ export default function Home() {
       <div className="container">
         <Container />
       </div>
+
+      <div className="blog">
+        <a href="https://viverbem.unimed.coop.br/" target="_blank" rel="noopener noreferrer"><Image src={Blog} alt="blog" width={10000}></Image></a>
+      </div>
+
+  
+
     </div>
   );
 }
