@@ -144,6 +144,22 @@ button:hover {
     border-radius: 8px;
     transition: 1s ease-in-out
 }
+.container1.hovered {
+    transform: scale(1.3);
+  }
+  
+  /* Quando o contêiner 2 é hoverado */
+  .container2.hovered {
+    transform: scale(1.2);
+  }
+
+  .container1.reduced {
+    transform: scale(0.9);
+  }
+
+  .container2.reduced {
+    transform: scale(0.8);
+  }
 
 .texto1 {
     color: rgb(63, 61, 61);
@@ -155,15 +171,7 @@ button:hover {
     
 }
 
-  
-  .hovered {
-    transform: scale(1.1);
-  }
-
-  .reduced {
-    transform: scale(0.9);
-  }
-
+ 
 .saibamais {
     background-color: none;
     color: black;
