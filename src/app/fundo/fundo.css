@@ -155,29 +155,14 @@ button:hover {
     
 }
 
-.container1, .container2 {
-    /* Outras propriedades do seu container */
-    transition: 1s ease-in-out;
-}
+  
+  .hovered {
+    transform: scale(1.1);
+  }
 
-/* Aumenta o tamanho quando o ponteiro estiver sobre o container */
-.container1:hover {
-    transform: scale(1.3); /* Aumenta o tamanho do container 1 */
-}
-
-.container2:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do container 2 */
-}
-
-/* Diminui o tamanho do outro container quando o mouse estiver sobre o primeiro */
-.container1:hover ~ .container2 {
-    transform: scale(0.9); /* Diminui o tamanho do container 2 */
-}
-
-/* Diminui o tamanho do outro container quando o mouse estiver sobre o segundo */
-.container2:hover ~ .container1 {
-    transform: scale(0.9); /* Diminui o tamanho do container 1 */
-}
+  .reduced {
+    transform: scale(0.9);
+  }
 
 .saibamais {
     background-color: none;
