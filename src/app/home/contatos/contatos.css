@@ -7,7 +7,7 @@
     margin-right: 8;
     margin-top: 20px;
     width: 100%;
-    gap: 8px;
+    gap: 50px;
     position: relative;
 }
   
@@ -24,4 +24,27 @@
     flex-shrink: 0;
     position: relative;
     justify-content: center;
+}
+
+.contatos{
+    margin-top: 17;
+    margin-left:25;
+    transform: scale(1.2);
+    margin-right: 20;
+}
+
+.sos {
+    transform: scale(1.1);
+}
+
+.whats{
+    transform: scale(1.1);
+}
+
+.sac{
+    transform: scale(1.1);
+}
+
+.contratar{
+    transform: scale(1.1);
 }

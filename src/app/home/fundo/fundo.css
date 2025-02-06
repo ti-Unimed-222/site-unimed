@@ -1,8 +1,9 @@
 .fundo {
     position: relative;
     width: 100vw;
-    height: 100vh; /* A altura pode ser ajustada conforme necessário */
+    height: 70vh; /* A altura pode ser ajustada conforme necessário */
     justify-content: flex-start;
+    margin-top: 30;
 }
 
 .imagem {
