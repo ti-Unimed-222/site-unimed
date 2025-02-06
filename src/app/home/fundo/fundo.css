@@ -11,13 +11,15 @@
     position: relative;
     width: 100vw;
     height: 590px;
+    justify-content: flex-start;
     background-image: url('./fundo.png'); /* Substitua pelo caminho correto da imagem */
     background-size: 50cm; /* A imagem vai cobrir todo o container */
-
+    background-attachment: scroll;
     background-position: center top; /* A imagem será centralizada */
     background-repeat: no repeat ;
     
 }
+
 
 .overlay {
     position: absolute;
@@ -109,6 +111,7 @@ button:hover {
     gap: 0;
     display: flex;
     width: 50%;
+    cursor: pointer;
 }
 
 

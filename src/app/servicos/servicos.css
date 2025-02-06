@@ -52,3 +52,25 @@
   .atendimento {
     margin-top: 40px;
   }
+
+
+  .button {
+    margin-top: -20;
+    margin-left: 800;
+    border:1px solid #2b8046;
+    padding: 9px 50px;
+    border-radius: 4px;
+    background-color: #2b8046;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+
+  .button:hover {
+    background-color: #174b27;
+    color: white;
+    transition: 500ms ease-in-out;
+
+  }
+
+

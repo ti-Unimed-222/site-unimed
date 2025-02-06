@@ -24,7 +24,7 @@ const Carousel: React.FC = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-          <img key={index} src={image} alt={`Imagem ${index + 1}`} className="carousel-image" />
+          <img key={index} src={image} width={10000} alt={`Imagem ${index + 1}`} className="carousel-image" />
         ))}
       </div>
     </div>
