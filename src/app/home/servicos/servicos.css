@@ -1,0 +1,64 @@
+.servicos-container {
+    position: relative;
+    width: 100%;  /* 100% da largura da viewport */
+    margin-top: -130;
+    justify-content: center;  /* Alinha os itens horizontalmente */
+    align-items: center;      /* Alinha os itens verticalmente */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+
+    
+  }
+  
+  .baner {
+    width: 100%;   /* O banner ocupa 100% da largura da tela */
+    height:auto;  /* Ajusta a altura automaticamente (caso seja imagem) */
+    max-width: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área do banner */
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+    margin-bottom: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .services-items {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    margin-top: -50px; 
+    gap: 80;
+    transform: scale(0.7);
+    
+  }
+
+  .boleto {
+    margin-top: 35px;
+  }
+
+  .guia {
+    margin-top: 20px;
+  }
+
+  .plano{
+    margin-top: 50px;
+  }
+
+   .portal{
+    margin-top: 30px;
+   }
+
+  .fale{
+    margin-top: 30px;
+  }
+
+  .atendimento {
+    margin-top: 40px;
+  }
+
+
+
+
