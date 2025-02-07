@@ -12,6 +12,13 @@ import { MapPin } from 'lucide-react';
 
 export default function Navbar() {
     const [searchTerm, setSearchTerm] = React.useState("");
+
+      const [isOpen, setIsOpen] = useState(false);
+
+      const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+      };
+    
   
     return (
       <nav className="navbar">
@@ -43,16 +50,48 @@ export default function Navbar() {
               
           </div>
 
-          <div className='navbar-link'>
-            <li><a href="#home">Unimed Palmas</a></li>
-            <li><a href="#servicos" >Serviços</a></li>
-            <li><a href="#programas">Programas</a></li>
-            <li><a href="#planos">Planos</a></li>
-            <div className='local'>
-              <MapPin className='localicon' />
-              <h1 className='localtext'><a href='https://www.google.com/maps?q=-10.2089709,-48.3350843' target='_blank' rel='noopener noreferrer'>NOSSA LOCALIZAÇÃO</a></h1>
-            </div>
-          </div>   
+          <div className="navbar-link">
+          <div className="drop5">
+    <button className="home">Home</button>
+    <ul className="homeDrop">
+    <li><a href="#">Home</a></li>
+      <li><a href="#">Quem somos</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li><a href="#">LGPD</a></li>
+    </ul>
+  </div>
+  <div className="drop2">
+    <button className="servicos">Serviços</button>
+    <ul className="servicosDrop">
+      <li><a href="#">Atendimento</a></li>
+      <li><a href="#">Ouvidoria</a></li>
+    </ul>
+  </div>
+
+  <div className="drop3">
+    <button className="portais">Portais</button>
+    <ul className="portaisDrop">
+      <li><a href="#">TISS</a></li>
+      <li><a href="#">TUSS</a></li>
+    </ul>
+  </div>
+
+  <div className="drop4">
+    <button className="planos">Planos</button>
+    <ul className="planosDrop">
+      <li><a href="#">Conheça nossos planos</a></li>
+    </ul>
+  </div>
+  
+  <div className='local'>
+    <MapPin className='localicon'/>
+      <a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
+      NOSSA LOCALIZAÇÃO
+      </a>
+    
+  </div>
+</div>
+
         </div>
       </nav>
     );
