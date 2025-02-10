@@ -19,6 +19,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="carousel-container">
+      <a href="#noticias">
       <div
         className="carousel-track"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -27,6 +28,7 @@ const Carousel: React.FC = () => {
           <img key={index} src={image} width={10000} alt={`Imagem ${index + 1}`} className="carousel-image" />
         ))}
       </div>
+      </a>
     </div>
   );
 };

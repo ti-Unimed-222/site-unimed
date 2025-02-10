@@ -8,7 +8,7 @@ import Fundo from "./home/fundo/fundo";
 import Servicos from "./servicos/servicos";
 import Container from "./home/container/container";
 import Blog from './blog.png'
-
+import Rodape from "./components/rodape/rodape";
 
 export default function Home() {
   return (
@@ -39,7 +39,9 @@ export default function Home() {
         <a href="https://viverbem.unimed.coop.br/" target="_blank" rel="noopener noreferrer"><Image src={Blog} alt="blog" width={10000}></Image></a>
       </div>
 
-  
+      <div className="rodape">
+        <Rodape />
+      </div>
 
     </div>
   );

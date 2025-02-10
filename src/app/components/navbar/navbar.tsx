@@ -54,7 +54,6 @@ export default function Navbar() {
           <div className="drop5">
     <button className="home">Home</button>
     <ul className="homeDrop">
-    <li><a href="#">Home</a></li>
       <li><a href="#">Quem somos</a></li>
       <li><a href="#">Notícias</a></li>
       <li><a href="#">LGPD</a></li>

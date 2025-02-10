@@ -87,12 +87,13 @@ button {
   font-size: 16px;
   cursor: pointer;
   padding: 10px 15px;
-  font-weight: bold;
   transition: all 0.3s ease-in-out;
+  font-weight: 600;
 }
 button:hover {
   color: black;
   transform: scale(1.1);
+
 }
 
 ul {
