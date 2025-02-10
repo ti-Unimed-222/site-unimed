@@ -1,13 +1,19 @@
+.centrais{
+    margin-right: 200;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    border-right: 1px solid rgba(0, 0, 0, 0.158);
+    width: 50vw;
+    height: 16vw;
+    padding: 50;
+    font-size: 14;
+
+
+}
 .rodape {
     justify-content: center;
     margin-top: 3vw;
-}
-.rodape1{
-    display: flex;
-    padding-top: 4vw;
-    background-color: rgb(241, 241, 241);
-    justify-content: center;
-    width: 99.2vw;
 }
 
 .rodape-container {
@@ -19,26 +25,23 @@
 
 }
 
-.titulos {
-    font-size: 20;
-    font-weight: 600;
-    margin-bottom: 1vw;
-    color: rgba(0, 0, 0, 0.678);
+.linha-divisao{
+    display: flex;
+    margin-bottom: -10px;
 }
 
-.line{
-    margin-bottom: 15px;
-    font-size: 14;
-    color: rgba(0, 0, 0, 0.548);
 
-}
+
 
 .rodape2 {
     display: flex;
     margin-top: 10px;
-    margin-left: 200px;
     list-style-type: none;
     justify-content: center;
+    border-top:1px solid rgba(0, 0, 0, 0.158);
+    width:99.2vw;
+    margin-bottom: -20;
+    height: 110;
 }
 
 .coop {
@@ -57,9 +60,117 @@
 }
 
 .data{
-    margin-top: 60;
-    margin-left: 300;
-    font-size: 11;
+    display: flex;
+    justify-content: center;
+    margin-top: 47;
+    padding-right: 200;
+    font-size: 13;
     color: rgba(0, 0, 0, 0.733);
 
 }
+
+.whatsapp{
+    transform: scale(1.9);
+    margin-top: 4;
+    margin-right: 12;
+    margin-left: 7;
+    margin-bottom: 12px;
+}
+
+.phone{
+    margin-right: 12;
+    margin-bottom: 12px;
+}
+.clock{
+    margin-right: 12;
+    margin-bottom: 12px;
+}
+.mail{
+    display: flex;
+    margin-right: 10;
+    margin-bottom: 12px;
+    margin-left: -11;
+}
+.info-phone {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.712);
+
+}
+
+.info-whats {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.712);
+    margin-left: 10px;
+
+}
+
+.info-clock {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.712);
+
+}
+.info-clock2 {
+    display: flex;
+    display: flex;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.712);
+    margin-left:40
+}
+
+.info-mail {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.712);
+    margin-left: 80px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 18;
+    margin-bottom: 20;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 400;
+    margin-left: 40;
+    font-weight: 600;
+
+}
+
+.clock2{
+    margin-right: 12;
+    margin-bottom: 12px;
+    margin-left: 30px;
+}
+
+
+.siganos{
+    padding-top: 50;
+
+    list-style-type: none;
+
+}
+.siganos-title{
+    display: flex;
+    justify-content: center;
+    font-size: 18;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.76);
+}
+.apps{
+    gap:6px;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.6)
+}
+

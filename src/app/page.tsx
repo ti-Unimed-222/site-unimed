@@ -5,9 +5,10 @@ import Navbar from "./components/navbar/navbar"
 import ImageCarousel from "./home/carrossel/carrossel";
 import Contatos from "./home/contatos/contatos";
 import Fundo from "./home/fundo/fundo";
-import Servicos from "./servicos/servicos";
+import Servicos from "./home/servicos/servicos";
 import Container from "./home/container/container";
 import Blog from './blog.png'
+import Geral from "./home/geral/geral";
 import Rodape from "./components/rodape/rodape";
 
 export default function Home() {
@@ -37,6 +38,10 @@ export default function Home() {
 
       <div className="blog">
         <a href="https://viverbem.unimed.coop.br/" target="_blank" rel="noopener noreferrer"><Image src={Blog} alt="blog" width={10000}></Image></a>
+      </div>
+
+      <div className="geral">
+        <Geral />
       </div>
 
       <div className="rodape">

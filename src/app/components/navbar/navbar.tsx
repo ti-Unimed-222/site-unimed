@@ -47,9 +47,7 @@ export default function Navbar() {
                 Login
               </button>
               </div>
-              
           </div>
-
           <div className="navbar-link">
           <div className="drop5">
     <button className="home">Home</button>

@@ -1,0 +1,23 @@
+.rodape1{
+    display: flex;
+    padding-top: 1vw;
+    background-color: rgb(241, 241, 241);
+    justify-content: center;
+    width: 99.2vw;
+    margin-top: 3vw;
+    margin-bottom: -3vw;
+}
+
+.titulos {
+    font-size: 18;
+    font-weight: 600;
+    margin-bottom: 1vw;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.line{
+    margin-bottom: 15px;
+    font-size: 13;
+    color: rgba(0, 0, 0, 0.548);
+
+}
