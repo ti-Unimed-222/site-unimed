@@ -71,7 +71,7 @@
 
 .navbar-link {
   display: flex;
-  gap: 2px;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -84,11 +84,11 @@ button {
   background: none;
   color: rgba(20, 20, 20, 0.562);
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   padding: 10px 15px;
   transition: all 0.3s ease-in-out;
-  font-weight: 600;
+  font-weight: 300;
 }
 button:hover {
   color: black;
@@ -146,7 +146,7 @@ ul li:hover {
 .navbar-link a {
   text-decoration: none;
   color: dimgrey;
-  font-weight: 600;
+  font-weight: 300;
   transition: color 0.3s;
 
   
@@ -191,22 +191,17 @@ ul li:hover {
   gap: 18px;
   align-items: flex-start;
   font-size: 13px;
-  padding: 12px 80px;
+  padding: 11px 70px;
   justify-content: flex-start;
   background-color: rgba(180, 180, 180, 0.205);
   border-radius: 4px;
   position: relative;
-  margin-left: -7px;
+  margin-left: -10px;
 }
 
-.search-input {
-  padding: 8px 12px;
-  border: 1px solid #a71dd111;
-  border-radius: 1px;
-  font-size: 4px;
-  width: 200px;
+.search.click {
+  background-color: #2b8046;
 }
-
 
 .login {
   display: flex;
@@ -230,6 +225,7 @@ ul li:hover {
   color: rgba(0, 0, 0, 0.74);
   
 }
+
 
 .local {
   display: flex;
