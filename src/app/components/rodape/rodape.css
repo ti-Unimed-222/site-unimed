@@ -1,3 +1,4 @@
+
 .centrais{
     margin-right: 200;
     display: flex;
@@ -42,6 +43,7 @@
     width:99.2vw;
     margin-bottom: -20;
     height: 110;
+    font-family: Poppins, sans-serif;
 }
 
 .coop {

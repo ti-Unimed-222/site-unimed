@@ -1,7 +1,8 @@
 // src/components/Navbar.js
 'use client';
 import React, { useState } from 'react';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Page from '../../page'
 import './Navbar.css';
 import logo from "./logo.png"
 import Image from 'next/image';

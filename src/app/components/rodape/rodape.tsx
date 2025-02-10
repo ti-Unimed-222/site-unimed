@@ -1,4 +1,5 @@
 import './rodape.css'
+
 import Image from 'next/image'
 import Ans from './ans.png'
 import Coop from './coop.png'
