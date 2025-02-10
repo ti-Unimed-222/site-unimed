@@ -1,8 +1,13 @@
 .rodape {
+    justify-content: center;
+    margin-top: 3vw;
+}
+.rodape1{
     display: flex;
-    margin-top: 5vw;
+    padding-top: 4vw;
     background-color: rgb(241, 241, 241);
     justify-content: center;
+    width: 99.2vw;
 }
 
 .rodape-container {
@@ -25,4 +30,36 @@
     margin-bottom: 15px;
     font-size: 14;
     color: rgba(0, 0, 0, 0.548);
+
+}
+
+.rodape2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 200px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.coop {
+    transform: scale(0.4);
+}
+
+.ans {
+    transform: scale(0.5);
+    margin-left: -150;
+}
+
+.ansn {
+    transform: scale(0.2);
+    margin-left: -430;
+    margin-top: -15;
+}
+
+.data{
+    margin-top: 60;
+    margin-left: 300;
+    font-size: 11;
+    color: rgba(0, 0, 0, 0.733);
+
 }
