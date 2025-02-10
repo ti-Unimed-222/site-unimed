@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="nav-container">
           <div className='primeira-nav'>
             <div className='numero'>
-              <Image src={Numero} alt='numero'/>
+              <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'><Image src={Numero} alt='numero'/></a>
             </div>
           <div className='bots'>
             <div className='busca-container'>

@@ -54,24 +54,24 @@ export default function Rodape() {
             <div className='siganos'>
                 <li className='siganos-title'>Siga nossas redes sociais:</li>
                     <li className='apps'>
-                        <Image src={Facebook} alt='facebook' />
-                        <Image src={Instagram} alt='Instagram' />
-                        <Image src={X} alt='X' />
-                        <Image src={Linkedin} alt='Linkedin' />
+                        <a href='https://www.facebook.com/unimedpalmas/' target='_blank' rel='noopener noopener'><Image src={Facebook} alt='facebook' /></a>
+                        <a href='https://www.instagram.com/unimedpalmas/' target='_blank' rel='noopener noreferrer'><Image src={Instagram} alt='Instagram' /></a>
+                        <a href='https://x.com/i/flow/login?redirect_after_login=%2Funimedpalmas'target='_blank' rel='noopener noreferrer'> <Image src={X} alt='X' /></a>
+                        <a href='https://www.linkedin.com/company/unimed-palmas-cooperativa-de-trabalho-medico-ltda/' target='_blank' rel='noopener noreferrer'><Image src={Linkedin} alt='Linkedin' /></a>
                     </li>
                     <li className='siganos-title'>Baixe nosso aplicativo:</li>
                     <li className='apps'>
-                        <Image src={AppStore} alt='AppStore' />
-                        <Image src={PlayStore} alt='PlayStore' />
+                        <a href='https://apps.apple.com/br/app/unimed-cliente/id1458902471' target='_blank' rel='noopener noreferrer'><Image src={AppStore} alt='AppStore' /></a>
+                        <a href='https://play.google.com/store/apps/details?id=br.coop.unimed.cliente&hl=pt-BR&pli=1' target='_blank' rel='noopener noreferrer'><Image src={PlayStore} alt='PlayStore' /></a>
                     </li>
             </div>
             </div>
             <div className='rodape2'>
                 <li className='coop'>
-                    <Image src={Coop} alt='coop' />
+                    <a href='https://www.somos.coop.br/' target='_blank' rel='noopener noreferrer'><Image src={Coop} alt='coop' /></a>
                 </li>
                 <li className='ans'>
-                    <Image src={Ans} alt='ans' />
+                    <a href='https://www.gov.br/ans/pt-br' target='_blank' rel='noopener noreferrer'><Image src={Ans} alt='ans' /></a>
                 </li>
                 <li className='ansn'>
                     <Image src={AnsN}  alt='ansn' />
