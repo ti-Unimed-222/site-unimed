@@ -23,12 +23,9 @@
   border: none;
   outline: none;
   font-size: 13px;
-  padding: 11px 70px;
-  width: 900;
+  width: 10000;
   background-color: rgba(180, 180, 180, 0.205);
-  border-radius: 4px;
   font-family: 'Poppins', sans-serif;
-  margin-left: -10px;
   transition: all 1s ease-in-out;
 }
 
@@ -68,6 +65,7 @@
 }
 .numero {
   transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
 }
 
 .nav {
@@ -218,6 +216,7 @@ ul li:hover {
 
 .numero.hidden, .login.hidden {
   display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .search-icon {
