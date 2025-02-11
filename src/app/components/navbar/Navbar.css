@@ -63,10 +63,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: -30px;
 }
-.numero {
-  transform: scale(0.8);
-  transition: all 0.5s ease-in-out;
-}
 
 .nav {
   flex: center;
@@ -262,7 +258,6 @@ ul li:hover {
   font-size: 13;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
-    
 }
 
 .local.hover{
@@ -327,55 +322,109 @@ ul li:hover {
 .dropdown-menu li:hover {
   background-color: #f0f0f0;
 }
-
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
+.navbar-collapse.show {
+  display: flex;
+  transition: all 1s ease-in-out;
 }
 
 .menuicon {
+  display: none;
   color: black;
+}
+
+.navbar-collapse {
+  display: flex;
+  transition: all 1s ease-in-out;
+
 }
 
 
 /* Responsividade para dispositivos menores */
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
-  /* Ajusta a altura da Navbar para dispositivos móveis */
+  /* Navbar responsiva */
   .navbar {
-    height: 80px; /* Ajuste a altura conforme necessário */
+    height: 80px;
     padding: 10px 15px;
-    flex-direction: column; /* Organiza os itens verticalmente */
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: flex-start;
   }
 
-  /* Logo */
+  .local {
+    display: flex;
+  }
+  .menuicon {
+    display: flex;
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 24px;
+    cursor: pointer;
+    transform: scale(2);
+    align-items: center;
+    justify-content: center;
+    margin: 35
+  }
+
+  /* Logo menor para dispositivos móveis */
   .logo img {
-    height: 50px; /* Menor logo para telas menores */
+    display: none;
+    height: 50px;
     width: auto;
   }
+
   .navbar-toggle {
-    display: flex;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
   }
-  /* Links da Navbar */
+
+  .navbar-toggle.open {
+    transition: all 1s ease-in-out;
+  }
+
+  /* Menu deslizante da esquerda */
+  .navbar-collapse {
+    position: absolute;
+    top: 70;
+    left: -10;/* Inicialmente fora da tela */
+    width: 60%;
+    height: 1300;
+    background-color: white;
+    z-index: 1000;
+    transition: all 1s ease-in-out;
+    display: none;
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  /* Mostrar menu quando aberto */
+  .navbar-collapse.open {
+    display: flex;
+    transition: all 1s ease-in-out;
+    left: 0;
+  }
+
+  /* Links do menu */
   .navbar-link {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: left;
+    transition: all 1s ease-in-out;
+  }
+  .navbar-link.open {
     display: flex;
-    flex-direction: column; /* Exibe os links na vertical */
-    gap: 10px;
-    font-size: 14px;
-    align-items: flex-start;
-    margin-top: 10px;
+    height: 50vh;
+    transition: all 1s ease-in-out;
   }
 
-  /* Botões e busca */
+  /* Itens ocultos no mobile */
   .bots, .fazerlogin, .search-container {
-    display: none; /* Oculta os elementos para otimizar o espaço */
+    display: none;
   }
 
-  /* Ajuste do botão de login */
   .login {
     font-size: 16px;
     padding: 8px 15px;
@@ -424,5 +473,70 @@ ul li:hover {
   .segundanav {
     display: block; /* Para melhor separação entre elementos */
   }
+  .numero {
+    display: none;
+
+  }
+
+  .menuicon{
+    margin-bottom: 20;
+  }
+  ul {
+    position: initial;
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+    font-size: 13;
+    margin-left: 20;
+  }
+
+  ul.open {
+    max-height: 500px; 
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home, .servicos, .portais, .planos{
+    color:#333;
+    font-size: 18;
+  }
+  .home:hover, .servicos:hover, .portais:hover, .planos:hover{
+    color: black;
+    background-color: #dddddd9a;
+  }
+
+
+  li {
+    padding: 8px 10px;
+  }
+  
+  li a {
+    text-decoration: none;
+  }
+  
+  ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul li:hover {
+    color: black;
+  }
+  
+  .drop5, .drop2, .drop3, .drop4 {
+  position: relative;
+}
 }
 
