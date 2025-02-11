@@ -1,8 +1,6 @@
 // src/components/Navbar.js
 'use client';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Page from '../../page'
 import './Navbar.css';
 import logo from "./logo.png"
 import Image from 'next/image';
@@ -12,8 +10,8 @@ import { User } from 'lucide-react';
 import { MapPin } from 'lucide-react'; 
 
 export default function Navbar() {
-    const [searchTerm, setSearchTerm] = React.useState("");
-
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchActive, setSearchActive] = useState(false);
       const [isOpen, setIsOpen] = useState(false);
 
       const toggleDropdown = () => {
@@ -28,22 +26,24 @@ export default function Navbar() {
             </div>
         <div className="nav-container">
           <div className='primeira-nav'>
-            <div className='numero'>
+            <div className={`numero ${searchActive ? "hidden" : ""}`}>
               <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'><Image src={Numero} alt='numero'/></a>
             </div>
           <div className='bots'>
             <div className='busca-container'>
             <Search className="search-icon" />
-              <input className='search'
+              <input className={`search ${searchActive ? "focused" : ""}`}
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Faça sua busca aqui"
+                onFocus={() => setSearchActive(true)}
+                onBlur={() => setSearchActive(false)}
               />
             </div>
 
               
-              <button className="login">
+              <button className={`login ${searchActive ? "hidden" : ""}`}>
               <User className='usericon' />
                 Login
               </button>

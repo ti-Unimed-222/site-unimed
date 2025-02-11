@@ -10,7 +10,6 @@
     padding: 50;
     font-size: 14;
 
-
 }
 .rodape {
     justify-content: center;
@@ -98,7 +97,7 @@
     justify-content: center;
     display: flex;
     margin-bottom: 12px;
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -107,7 +106,7 @@
     justify-content: center;
     display: flex;
     margin-bottom: 12px;
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.5);;
     margin-left: 10px;
 
 }
@@ -117,14 +116,14 @@
     justify-content: center;
     display: flex;
     margin-bottom: 12px;
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.5);;
 
 }
 .info-clock2 {
     display: flex;
     display: flex;
     margin-bottom: 12px;
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.5);;
     margin-left:40
 }
 
@@ -133,7 +132,7 @@
     justify-content: center;
     display: flex;
     margin-bottom: 12px;
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.5);;
     margin-left: 80px;
 }
 
@@ -142,7 +141,7 @@
     justify-content: center;
     font-size: 18;
     margin-bottom: 20;
-    color: rgba(0, 0, 0, 0.76);
+    color: rgba(0, 0, 0, 0.644);
     font-weight: 400;
     margin-left: 40;
     font-weight: 600;

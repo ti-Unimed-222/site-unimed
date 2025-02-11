@@ -19,7 +19,23 @@
 }
 
 
+.search.focused {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 11px 70px;
+  width: 900;
+  background-color: rgba(180, 180, 180, 0.205);
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: -10px;
+  transition: all 1s ease-in-out;
+}
 
+.search:focus-within{
+  width: 900px;
+  -ms-transform-origin-x: left;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -176,6 +192,7 @@ ul li:hover {
 }
 .busca-container {
   display: flex;
+  
 
 }
 .segundanav{
@@ -187,20 +204,25 @@ ul li:hover {
   margin-top: 9px;
 }
 .search {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
+  border: none;
+  outline: none;
   font-size: 13px;
   padding: 11px 70px;
-  justify-content: flex-start;
   background-color: rgba(180, 180, 180, 0.205);
   border-radius: 4px;
-  position: relative;
-  margin-left: -10px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: -9px;
+  transition: all 0.8s ease-in-out;
+  width: 400;
 }
 
-.search.click {
-  background-color: #2b8046;
+.numero.hidden, .login.hidden {
+  display: none;
+}
+
+.search-icon {
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 .login {
