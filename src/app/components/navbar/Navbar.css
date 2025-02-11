@@ -324,7 +324,7 @@ ul li:hover {
 }
 .navbar-collapse.show {
   display: flex;
-  transition: all 1s ease-in-out;
+
 }
 
 .menuicon {
@@ -392,7 +392,8 @@ ul li:hover {
     height: 1300;
     background-color: white;
     z-index: 1000;
-    transition: all 1s ease-in-out;
+    transition: transform 1s ease; /* Adiciona a transição da posição */
+  transform: translateX(0); /* Começa com o menu fora da tela */
     display: none;
     flex-direction: column;
     padding: 60px 20px;
@@ -405,6 +406,7 @@ ul li:hover {
     left: 0;
   }
 
+ 
   /* Links do menu */
   .navbar-link {
     display: none;
