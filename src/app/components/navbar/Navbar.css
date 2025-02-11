@@ -254,19 +254,20 @@ ul li:hover {
   align-items: center;
   justify-content: center;
   margin-left: 10vw;
-  height: 47px;
+  height: 44px;
   border-left: 1px solid rgba(0, 0, 0, 0.103);
   padding: 8px 12px;
   transition: all 0.3s ease-in-out;
   margin-bottom: -40px;
   font-size: 13;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
+  
     
 }
 
 .local.hover{
   transform: scale(1.1);
+  font-weight: 800;
 }
 
 .drop1{
@@ -327,21 +328,101 @@ ul li:hover {
   background-color: #f0f0f0;
 }
 
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.menuicon {
+  color: black;
+}
+
+
 /* Responsividade para dispositivos menores */
+/* Para dispositivos móveis */
 @media (max-width: 768px) {
+  /* Ajusta a altura da Navbar para dispositivos móveis */
   .navbar {
-    flex-direction: column;
+    height: 80px; /* Ajuste a altura conforme necessário */
+    padding: 10px 15px;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .navbar-links {
-    flex-direction: column;
+  /* Logo */
+  .logo img {
+    height: 50px; /* Menor logo para telas menores */
+    width: auto;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  /* Links da Navbar */
+  .navbar-link {
+    display: flex;
+    flex-direction: column; /* Exibe os links na vertical */
+    gap: 10px;
+    font-size: 14px;
+    align-items: flex-start;
     margin-top: 10px;
   }
 
-  .search-login {
-    flex-direction: column;
-    align-items: flex-start;
+  /* Botões e busca */
+  .bots, .fazerlogin, .search-container {
+    display: none; /* Oculta os elementos para otimizar o espaço */
+  }
+
+  /* Ajuste do botão de login */
+  .login {
+    font-size: 16px;
+    padding: 8px 15px;
+    width: 100%;
+  }
+
+  /* Menu de navegação no mobile */
+  .nav {
+    width: 100%;
+    justify-content: space-between;
     gap: 10px;
   }
+
+  /* Responsividade para os dropdowns */
+  .dropdown-toggle {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .unimedDrop {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* Alterna o layout do container de busca para ser mais compacta */
+  .search {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  /* Reorganiza o local e outros itens */
+  .local {
+    display: none; /* Oculta o botão de local em telas menores */
+  }
+
+  /* Melhor ajustamento da busca no mobile */
+  .search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .segundanav {
+    display: block; /* Para melhor separação entre elementos */
+  }
 }
+
