@@ -121,9 +121,10 @@ export default function Navbar() {
 
             <div className='local'>
               <MapPin className='localicon' />
-              <a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
+              <li><a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
                 NOSSA LOCALIZAÇÃO
               </a>
+              </li>
             </div>
           </div>
         </div>

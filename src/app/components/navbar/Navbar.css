@@ -344,12 +344,17 @@ ul li:hover {
 @media (max-width: 768px) {
   /* Navbar responsiva */
   .navbar {
-    height: 80px;
+    display: flex;
+    height: 50px;
     padding: 10px 15px;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: none; 
+    
   }
-
+  .logo{
+    display: none;
+  }
   .local {
     display: flex;
   }
@@ -365,12 +370,6 @@ ul li:hover {
   }
 
   /* Logo menor para dispositivos móveis */
-  .logo img {
-    display: none;
-    height: 50px;
-    width: auto;
-  }
-
   .navbar-toggle {
     display: block;
     background: none;
@@ -386,10 +385,10 @@ ul li:hover {
   /* Menu deslizante da esquerda */
   .navbar-collapse {
     position: absolute;
-    top: 70;
+    top: 50;
     left: -10;/* Inicialmente fora da tela */
     width: 60%;
-    height: 1300;
+    height: 1200;
     background-color: white;
     z-index: 1000;
     transition: transform 1s ease; /* Adiciona a transição da posição */
@@ -516,7 +515,6 @@ ul li:hover {
   }
   .home:hover, .servicos:hover, .portais:hover, .planos:hover{
     color: black;
-    background-color: #dddddd9a;
   }
 
 

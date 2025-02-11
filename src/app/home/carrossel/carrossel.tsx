@@ -9,6 +9,7 @@ const images = [
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   useEffect(() => {
     const interval = setInterval(() => {

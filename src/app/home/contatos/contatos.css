@@ -48,3 +48,10 @@
 .contratar{
     transform: scale(1.1);
 }
+
+@media (max-width: 768px){
+    .sos{
+        width: 100vw;
+        height: 100vw;
+    }
+}
