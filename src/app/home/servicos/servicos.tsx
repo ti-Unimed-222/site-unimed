@@ -37,13 +37,8 @@ export default function Servicos () {
                 </a>
                 </li>
                 <li className="fale">
-                <a href="#ouvidoria">
+                <a href="https://unimedpalmas.coop.br/atendimento">
                     <Image src={Fale} alt="fale" />
-                </a>
-                </li>
-                <li className="atendimento">
-                <a href="#atendimento">
-                    <Image src={Atendimento} alt="atendimento" />
                 </a>
                 </li>
             </div>
