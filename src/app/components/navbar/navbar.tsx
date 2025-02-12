@@ -13,12 +13,12 @@ export default function Navbar() {
   const toggleMenu = () => {
     const menu = document.querySelector(".navbar-collapse");
     
-    if (!menu) return; // Se 'menu' for null, sai da função para evitar erro
+    if (!menu) return; 
   
     if (!menuOpen) {
-      menu.style.left = "0"; // Abre o menu
+      menu.style.left = "0"; 
     } else {
-      menu.style.left = "-100%"; // Fecha o menu
+      menu.style.left = "-100%";
     }
   
     setMenuOpen(!menuOpen);
@@ -26,14 +26,12 @@ export default function Navbar() {
   
 
   const [dropdownOpen, setDropdownOpen] = useState<{ [key: string]: boolean }>({});
-  const [selectedParent, setSelectedParent] = useState<string | null>(null); // Para controlar o item pai selecionado
+  const [selectedParent, setSelectedParent] = useState<string | null>(null); 
 
   const toggleDropdown = (menuKey: string) => {
     setDropdownOpen((prev) => {
-      // Fechar todos os dropdowns, e abrir o atual
       const newDropdownState = { ...prev, [menuKey]: !prev[menuKey] };
       
-      // Fechar todos os outros dropdowns quando abrir um
       Object.keys(newDropdownState).forEach(key => {
         if (key !== menuKey) {
           newDropdownState[key] = false;
@@ -42,11 +40,11 @@ export default function Navbar() {
       
       return newDropdownState;
     });
-    setSelectedParent(menuKey); // Define o item pai como selecionado ao clicar
+    setSelectedParent(menuKey);
   };
 
   const handleSubItemClick = (menuKey: string) => {
-    setSelectedParent(menuKey); // Mantém o item pai como selecionado após clicar no subitem
+    setSelectedParent(menuKey);
   };
 
   return (
@@ -56,27 +54,19 @@ export default function Navbar() {
       </div>
       <div className="nav-container">
         <div className="primeira-nav">
-          <div className={`numero ${searchActive ? "hidden" : ""}`}>
-            <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'>
-              <Image src={Numero} alt='numero-image' height={200} width={200} />
-            </a>
-          </div>
-          <div className='bots'>
-            <div className='busca-container'>
-              <Search className="search-icon" />
-              <input
-                className={`search ${searchActive ? "focused" : ""}`}
-                type="text"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Faça sua busca aqui"
-                onFocus={() => setSearchActive(true)}
-                onBlur={() => setSearchActive(false)}
-              />
+          
+          <div className='local'>
+              <MapPin className='localicon' />
+              <li><a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
+                NOSSA LOCALIZAÇÃO
+              </a>
+              </li>
             </div>
-            <button className={`login ${searchActive ? "hidden" : ""}`}>
-              <User className='usericon' />
-              Login
+            <div className="numero">
+            <button className='numero-bt'>
+            <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'>
+            (63) 3025-5810
+            </a>
             </button>
           </div>
         </div>
@@ -87,22 +77,21 @@ export default function Navbar() {
 
         <div className={`navbar-collapse ${menuOpen ? "show" : ""}`}>
           <div className={`navbar-link ${menuOpen ? "open" : ""}`}>
-            {/* Dropdown Home */}
+
             <div className="drop5">
               <button 
-                 className={`home ${selectedParent === 'home' ? 'selected' : ''}`} // Aplica a classe 'selected' quando o item pai estiver selecionado
+                 className={`home ${selectedParent === 'home' ? 'selected' : ''}`} 
                  onClick={() => toggleDropdown('home')}
               >
                 Home
               </button>
               <ul className={`homeDrop ${dropdownOpen['home'] ? "open" : ""}`}>
-                <li><a href="#"  onClick={() => handleSubItemClick('home')}>Quem somos</a></li>
-                <li><a href="#"  onClick={() => handleSubItemClick('home')}>Notícias</a></li>
-                <li><a href="#"  onClick={() => handleSubItemClick('home')}>LGPD</a></li>
+                <li><a href="https://unimedpalmas.coop.br/quemsomos"  onClick={() => handleSubItemClick('home')}>Quem somos</a></li>
+                <li><a href="https://unimedpalmas.coop.br/noticias"  onClick={() => handleSubItemClick('home')}>Notícias</a></li>
+                <li><a href="https://unimedpalmas.coop.br/lgpd"  onClick={() => handleSubItemClick('home')}>LGPD</a></li>
               </ul>
             </div>
 
-            {/* Dropdown Serviços */}
             <div className="drop2">
               <button 
                 className={`servicos ${selectedParent === 'servicos' ? 'selected' : ''}`}
@@ -111,12 +100,15 @@ export default function Navbar() {
                 Serviços
               </button>
               <ul className={`servicosDrop ${dropdownOpen['servicos'] ? "open" : ""}`}>
-                <li><a href="#"  onClick={() => handleSubItemClick('home')}>Atendimento</a></li>
-                <li><a href="#"  onClick={() => handleSubItemClick('home')}>Ouvidoria</a></li>
+                <li><a href="https://portal.unimedpalmas.coop.br/"  onClick={() => handleSubItemClick('home')}>Canal do Beneficiário</a></li>
+                <li><a href="https://portal.unimedpalmas.coop.br/pls_paginaGuiaMedico.jsp"  onClick={() => handleSubItemClick('home')}>Guia Médico</a></li>
+                <li><a href="https://canal.unimedpalmas.coop.br/cartao_virtual"  onClick={() => handleSubItemClick('home')}>Cartão Virtual</a></li>
+                <li><a href="https://boleto.unimedpalmas.coop.br/"  onClick={() => handleSubItemClick('home')}>Boleto</a></li>
+                <li><a href="https://unimedpalmas.coop.br/reembolso"  onClick={() => handleSubItemClick('home')}>Solicitar Reembolso</a></li>
+                <li><a href="https://unimedpalmas.coop.br/cancelamento"  onClick={() => handleSubItemClick('home')}>Cancelamento Contrato</a></li>
               </ul>
             </div>
 
-            {/* Dropdown Portais */}
             <div className="drop3">
               <button className={`portais ${selectedParent === 'portais' ? 'selected' : ''}`}
                 onClick={() => toggleDropdown('portais')}>Portais</button>
@@ -126,7 +118,6 @@ export default function Navbar() {
               </ul>
             </div>
 
-            {/* Dropdown Planos */}
             <div className="drop4">
               <button className={`planos ${selectedParent === 'planos' ? 'selected' : ''}`}
                 onClick={() => toggleDropdown('planos')}>Planos</button>
@@ -135,13 +126,7 @@ export default function Navbar() {
               </ul>
             </div>
 
-            <div className='local'>
-              <MapPin className='localicon' />
-              <li><a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
-                NOSSA LOCALIZAÇÃO
-              </a>
-              </li>
-            </div>
+            
           </div>
         </div>
       </div>

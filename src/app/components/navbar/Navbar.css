@@ -1,4 +1,4 @@
-/* Container principal da Navbar */
+
 .navbar {
   background-color: #ffffff;
   color: darkslategray;
@@ -9,8 +9,8 @@
   font-size: 20px;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
   position: fixed;
-  top: 0; /* Alinha no topo da página */
-  left: 0; /* Garante que fique no começo da tela */
+  top: 0; 
+  left: -0;
   width: 100%; 
   height: 110px;
   z-index: 1000; 
@@ -18,29 +18,17 @@
   
 }
 
+
 .menuicon{
   display: none;
 }
 
-.search.focused {
-  border: none;
-  outline: none;
-  font-size: 13px;
-  width: 10000;
-  background-color: rgba(180, 180, 180, 0.205);
-  font-family: 'Poppins', sans-serif;
-  transition: all 1s ease-in-out;
-}
-
-.search:focus-within{
-  width: 900px;
-  -ms-transform-origin-x: left;
-}
 .logo {
   display: flex;
   align-items: center;
   transform: scale(0.9);
   padding-right: 1vw;
+  margin-left: -400px;
 }
 
 .primeira-nav{
@@ -48,6 +36,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: -10px;
+  gap:15px
 }
 
 .logo img {
@@ -58,7 +47,7 @@
 .navbar-link {
   font-size: 15;
   display: flex;
-  gap: 20px;
+  gap: 80px;
   list-style: none;
   justify-content: flex-start;
   align-items: flex-start;
@@ -67,6 +56,10 @@
   margin-bottom: -30px;
 }
 
+.navbar-link:hover{
+  font-weight: 600;
+  color: black;
+}
 .nav {
   flex: center;
   padding: 15px 20px;
@@ -78,13 +71,12 @@
 .primeira-nav{
   width: -2vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.103);
-  gap: 15vw;
 }
 
 
 .navbar-link {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
 }
 
@@ -112,8 +104,8 @@ button:hover {
 ul {
   display: none;
   position: absolute;
-  top: 100%; /* Mantém o dropdown logo abaixo do botão */
-  left: 0;
+  top: 110%; 
+  left: -30;
   background-color: white;
   list-style: none;
   padding: 10px 0;
@@ -121,7 +113,7 @@ ul {
   border-radius: 4px;
   min-width: 150px;
   z-index: 10;
-  box-shadow:0 2px 2px #333;
+  box-shadow:none;
 }
 
 ul li {
@@ -136,8 +128,6 @@ ul li a {
 ul li:hover {
   background-color: #f7f7f7;
 }
-
-/* Corrige hover para cada dropdown */
 
 
 .drop2:hover .servicosDrop {
@@ -163,12 +153,6 @@ ul li:hover {
   transition: color 0.3s;
 
   
-}
-
-.navbar-link a:hover {
-  color: black;
-
-
 }
 
 .bots{
@@ -213,10 +197,6 @@ ul li:hover {
   width: 400;
 }
 
-.numero.hidden, .login.hidden {
-  display: none;
-  transition: all 0.5s ease-in-out;
-}
 
 .search-icon {
   color: #333;
@@ -246,25 +226,36 @@ ul li:hover {
   
 }
 
+.numero-bt{
+  display: flex;
+  color: #333333c9;
+  font-size: 14;
+  font-weight: 600;
+  
+}
+
 
 .local {
   display: flex;
   gap:10px;
   align-items: center;
   justify-content: center;
-  margin-left: 10vw;
-  height: 44px;
-  border-left: 1px solid rgba(0, 0, 0, 0.103);
-  padding: 8px 12px;
+  height: 40px;
+  border-right: 1px solid rgba(0, 0, 0, 0.103);
+  padding: 8px 25px;
   transition: all 0.3s ease-in-out;
-  margin-bottom: -40px;
   font-size: 13;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style-type: none;
+  color: #333333a6;
+  font-weight: 600;
+}
+
+.local:hover{
   
 }
 
-.local.hover{
-  transform: scale(1.1);
+.localicon:hover{
   font-weight: 800;
 }
 
@@ -326,11 +317,7 @@ ul li:hover {
   background-color: #f0f0f0;
 }
 
-
-/* Responsividade para dispositivos menores */
-/* Para dispositivos móveis */
 @media (max-width: 768px) {
-  /* Navbar responsiva */
   .navbar {
     display: flex;
     height: 65px;
@@ -359,7 +346,6 @@ ul li:hover {
     margin: 35
   }
 
-  /* Logo menor para dispositivos móveis */
   .navbar-toggle {
     display: block;
     background: none;
@@ -372,12 +358,11 @@ ul li:hover {
     transition: all 1s ease-in-out;
   }
 
-  /* Menu deslizante da esquerda */
   .navbar-collapse {
     position: fixed;
   top: 70;
   left: -100%;
-  width: 100vw; /* Ajuste conforme necessário */
+  width: 100vw; 
   height: 100vh;
   background: white;
   box-shadow: none;
@@ -385,15 +370,13 @@ ul li:hover {
   z-index: 1000;
   }
 
-  /* Mostrar menu quando aberto */
   .navbar-collapse.open {
     display: flex;
     transition: all 1s ease-in-out;
     left: 0;
   }
 
- 
-  /* Links do menu */
+
   .navbar-link {
     display: none;
     flex-direction: column;
@@ -409,7 +392,6 @@ ul li:hover {
     transition: all 1s ease-in-out;
   }
 
-  /* Itens ocultos no mobile */
   .bots, .fazerlogin, .search-container {
     display: none;
   }
@@ -420,14 +402,12 @@ ul li:hover {
     width: 100%;
   }
 
-  /* Menu de navegação no mobile */
   .nav {
     width: 100%;
     justify-content: space-between;
     gap: 10px;
   }
 
-  /* Responsividade para os dropdowns */
   .dropdown-toggle {
     font-size: 14px;
     width: 100%;

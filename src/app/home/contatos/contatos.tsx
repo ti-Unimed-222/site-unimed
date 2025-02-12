@@ -18,11 +18,11 @@ export default function Contatos() {
             <Image src= {Contato} alt="contato" height={600} width={600}>
             </Image>
             </li>
-            <li className="sos"><a href="https://www.unimed.coop.br/site/web/blumenau/sos-unimed"  target="_blank" rel="noopener noreferrer">
+            <li className="sos"><a href="https://unimedpalmas.coop.br/atendimento"  target="_blank" rel="noopener noreferrer">
                 <Image src= {Sos} alt="sos" height={280} width={280}>
                 </Image>
             </a></li>
-            <li className="whats"><a href="https://api.whatsapp.com/send/?phone=47999010459&text=Ol%C3%A1&app_absent=0" target="_blank" rel="noopener noreferrer">
+            <li className="whats"><a href="https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
                 <Image src= {Whats} alt="whats" height={280} width={280}>
                 </Image>
             </a></li>
@@ -30,7 +30,7 @@ export default function Contatos() {
                 <Image src= {Sac} alt="sac" height={280} width={280}>
                 </Image>
             </a></li>
-            <li className="contratar"><a href="https://www.unimed.coop.br/site/web/blumenau/contrate-seu-plano" target="_blank" rel="noopener noreferrer">
+            <li className="contratar"><a href="https://unimedpalmas.vagas.solides.com.br/" target="_blank" rel="noopener noreferrer">
                 <Image src= {Contratar} alt="contratar" height={280}/>
             </a></li>
             <li className="baner"><a href="https://unimedpalmas.vagas.solides.com.br/" target="_blank" rel="noopener noreferrer">

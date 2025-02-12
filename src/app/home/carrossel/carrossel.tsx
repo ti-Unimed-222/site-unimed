@@ -20,7 +20,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="carousel-container">
-      <a href="#noticias">
+      <a href="https://unimedpalmas.coop.br/noticias" target="_blanc" rel="noopener noreferrer">
       <div
         className="carousel-track"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
