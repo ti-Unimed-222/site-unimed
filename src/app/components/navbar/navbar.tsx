@@ -3,12 +3,28 @@ import './Navbar.css';
 import logo from "./logo.png";
 import Image from 'next/image';
 import Numero from './contato.png';
-import { Search, User, MapPin, Menu } from 'lucide-react';
+import { Search, User, MapPin, Menu, Home } from 'lucide-react';
 
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchActive, setSearchActive] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    const menu = document.querySelector(".navbar-collapse");
+    
+    if (!menu) return; // Se 'menu' for null, sai da função para evitar erro
+  
+    if (!menuOpen) {
+      menu.style.left = "0"; // Abre o menu
+    } else {
+      menu.style.left = "-100%"; // Fecha o menu
+    }
+  
+    setMenuOpen(!menuOpen);
+  };
+  
+
   const [dropdownOpen, setDropdownOpen] = useState<{ [key: string]: boolean }>({});
   const [selectedParent, setSelectedParent] = useState<string | null>(null); // Para controlar o item pai selecionado
 
@@ -65,7 +81,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="navbar-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="navbar-toggle" onClick={toggleMenu }>
           <Menu className='menuicon' />
         </div>
 
