@@ -37,7 +37,7 @@ export default function Servicos () {
                 </a>
                 </li>
                 <li className="fale">
-                <a href="https://unimedpalmas.coop.br/atendimento">
+                <a href="https://unimedpalmas.coop.br/atendimento" target="_blank" rel="noopener noreferrer">
                     <Image src={Fale} alt="fale" />
                 </a>
                 </li>
