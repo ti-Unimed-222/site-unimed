@@ -27,7 +27,7 @@ export default function Servicos () {
                 </a>
                 </li>
                 <li className="plano">
-                <a href="https://portal.unimedpalmas.coop.br/pls_paginaGuiaMedico.jsp" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.unimed.coop.br/site/planos" target="_blank" rel="noopener noreferrer">
                     <Image src={Plano} alt="plano" />
                 </a>
                 </li>
