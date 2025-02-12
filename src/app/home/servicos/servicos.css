@@ -1,19 +1,19 @@
 .servicos-container {
     position: relative;
-    width: 100%;  /* 100% da largura da viewport */
+    width: 100%; 
     margin-top: -130;
-    justify-content: center;  /* Alinha os itens horizontalmente */
-    align-items: center;      /* Alinha os itens verticalmente */
-    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+    justify-content: center; 
+    align-items: center;    
+    overflow: hidden; 
 
     
   }
   
   .baner {
-    width: 100%;   /* O banner ocupa 100% da largura da tela */
-    height:auto;  /* Ajusta a altura automaticamente (caso seja imagem) */
+    width: 100%;
+    height:auto;  
     max-width: 100%;
-    object-fit: cover; /* Garante que a imagem cubra toda a área do banner */
+    object-fit: cover; 
     flex-shrink: 0;
     display: flex;
     position: relative;

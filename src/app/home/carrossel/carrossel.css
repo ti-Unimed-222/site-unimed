@@ -50,15 +50,15 @@
     }
   }
   
-  /* Para telas médias (tablets) */
+  
   @media (max-width: 1024px) and (min-width: 768px) {
     .carousel-image {
       width: 100%;
-      max-height: 350px; /* Limita a altura das imagens */
+      max-height: 350px; 
     }
   }
   
-  /* Para telas pequenas (smartphones) */
+  
   @media (max-width: 768px) {
     .carousel-container {
       display: flex;
@@ -68,6 +68,6 @@
     .carousel-image {
       width: 100vw;
       height: auto;
-      max-height: 450px; /* Ajusta a altura para telas menores */
+      max-height: 450px; 
     }
   }

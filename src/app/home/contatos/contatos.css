@@ -13,14 +13,14 @@
 }
   
 .baner {
-    size-adjust: cover; /*ajustar para que fique da largura exata da tela*/
+    size-adjust: cover; 
     background-position: center;
     display: flex;
     overflow: hidden;
     margin: 0;
     left: 0;
-    width: 100vw; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    width: 100vw; 
+    height: 200px; 
     flex-wrap: wrap;
     flex-shrink: 0;
     position: relative;

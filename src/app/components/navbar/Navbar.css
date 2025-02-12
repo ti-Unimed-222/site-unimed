@@ -251,13 +251,6 @@ ul li:hover {
   font-weight: 600;
 }
 
-.local:hover{
-  
-}
-
-.localicon:hover{
-  font-weight: 800;
-}
 
 .drop1{
   gap: 6px;
@@ -418,7 +411,7 @@ ul li:hover {
     box-shadow: none;
   }
 
-  /* Alterna o layout do container de busca para ser mais compacta */
+
   .search {
     width: 100%;
     padding: 8px;
@@ -426,12 +419,11 @@ ul li:hover {
     margin-left: 0;
   }
 
-  /* Reorganiza o local e outros itens */
   .local {
-    display: none; /* Oculta o botão de local em telas menores */
+    display: none;
   }
 
-  /* Melhor ajustamento da busca no mobile */
+  
   .search-container {
     width: 100%;
     display: flex;
@@ -440,7 +432,7 @@ ul li:hover {
   }
 
   .segundanav {
-    display: block; /* Para melhor separação entre elementos */
+    display: block; 
   }
   .numero {
     display: none;

@@ -12,7 +12,6 @@ const Fundo = () => {
     return (
         <div className="fundo">
             <div className="imagem">
-                {/* {<Image src={Imagem} width={10000} />} */}
                 <div className="overlay"></div>
                 <div className="planos">
                     <li className="text1"><br /><h1>Cuidar de você.<br />Esse é o plano.</h1></li>

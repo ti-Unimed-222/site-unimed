@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logo from "./logo.png";
 import Image from 'next/image';
-import Numero from './contato.png';
 import { Search, User, MapPin, Menu, Home } from 'lucide-react';
 
 export default function Navbar() {
@@ -18,7 +17,7 @@ export default function Navbar() {
     if (!menuOpen) {
       menu.style.left = "0"; 
     } else {
-      menu.style.left = "-100%";
+      menu.style.right = "-100%";
     }
   
     setMenuOpen(!menuOpen);

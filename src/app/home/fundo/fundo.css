@@ -1,7 +1,7 @@
 .fundo {
     position: relative;
     width: 100%;
-    height: 40vw; /* A altura pode ser ajustada conforme necessário */
+    height: 40vw; 
     justify-content: center;
     margin-top: 30;
     overflow: hidden;
@@ -14,10 +14,9 @@
     overflow: hidden;
     height: 30vw;
     justify-content: center;
-    background-image: url('./fundo.png'); /* Substitua pelo caminho correto da imagem */
-    background-size: 100%; /* A imagem vai cobrir todo o container */
+    background-image: url('./fundo.png'); 
+    background-size: 100%; 
     background-attachment: scroll;
-/* A imagem será centralizada */
     background-repeat: no repeat ;
     word-wrap: break-word;
 }
@@ -29,8 +28,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Escurecendo a imagem */
-    z-index: 1; /* Garante que o overlay fique acima da imagem */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
     overflow: hidden;
 }
 
@@ -38,8 +37,8 @@
     margin-top: 8;
     position: relative;
     display: flex;
-    z-index: 2; /* Garante que o texto fique acima da sobreposição */
-    color: white; /* Torna o texto branco para contraste */
+    z-index: 2; 
+    color: white; 
     padding: 20px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -90,7 +89,7 @@
 
 
 .botão:hover {
-    background-color: rgb(102, 168, 75); /* Muda a cor de fundo ao passar o mouse */
+    background-color: rgb(102, 168, 75); 
     border: 1px solid rgb(102,168,75);
     color: rgb(24, 53, 12);
     font-weight: 600;
@@ -117,20 +116,20 @@
 
 .container1 {
     display: flex;
-    background-color: white; /* Cor de fundo para os contêineres filhos */
-    width: 30%; /* Ajuste a largura conforme necessário */
-    height: 200px; /* Ajuste a altura conforme necessário */
-    border: 1px solid #ccc; /* Adiciona borda aos contêineres */
+    background-color: white; 
+    width: 30%; 
+    height: 200px; 
+    border: 1px solid #ccc; 
     transform: scale(1.2);
 
 }
 
 .container2 {
     display: flex;
-    background-color: white; /* Cor de fundo para os contêineres filhos */
-    width: 30%; /* Ajuste a largura conforme necessário */
-    height: 200px; /* Ajuste a altura conforme necessário */
-    border: 1px solid #ccc; /* Adiciona borda aos contêineres */
+    background-color: white;
+    width: 30%; 
+    height: 200px; 
+    border: 1px solid #ccc; 
     transform: scale(1);
 
 }
@@ -138,10 +137,9 @@
 
 .container1,
 .container2 {
- /* Cor de fundo dos containers */
-    width: 280px; /* Ajuste a largura de cada container */
-    height: 380px; /* Altura do container */
-    border: none; /* Exemplo de borda */
+    width: 280px; 
+    height: 380px; 
+    border: none; 
     margin-top: 80px;
     margin-left: 80px;
     border-radius: 8px;
@@ -151,7 +149,7 @@
     transform: scale(1.3);
   }
   
-  /* Quando o contêiner 2 é hoverado */
+
   .container2.hovered {
     transform: scale(1.2);
   }
@@ -189,7 +187,7 @@
 }
 
 .saibamais:hover {
-    background-color: rgb(102, 168, 75); /* Muda a cor de fundo ao passar o mouse */
+    background-color: rgb(102, 168, 75); 
     border: 1px solid rgb(102,168,75);
     color: rgb(24, 53, 12);
     font-weight: 600;
