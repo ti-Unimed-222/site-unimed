@@ -18,7 +18,7 @@ export default function Geral(){
                     <a  href='https://portal.unimedpalmas.coop.br/pls_paginaGuiaMedico.jsp' className='href'><li className='line'>Guia Médico</li></a>
                     </div>
                     <div className="Prestadores">
-                    <li className='titulos'>Prestadores e Cooperados</li>
+                    <li className='titulos'>Prestadores e<br></br> Cooperados</li>
                     <a  href='https://unimedpalmas.coop.br/tiss' className='href'><li className='line'>Portal TISS</li></a>
                     <a  href='https://unimedpalmas.coop.br/tuss' className='href'><li className='line'>Portal TUSS</li></a>
                     <a  href='https://portal.unimedpalmas.coop.br/' className='href'><li className='line'>Autorizador</li></a>

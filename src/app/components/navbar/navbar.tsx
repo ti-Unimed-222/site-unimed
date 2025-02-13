@@ -10,15 +10,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    const menu = document.querySelector(".navbar-collapse");
-    
-    if (!menu) return; 
-  
-    if (!menuOpen) {
-      menu.style.left = "0"; 
-    } else {
-      menu.style.right = "-100%";
-    }
+    setMenuOpen(!menuOpen);
   
     setMenuOpen(!menuOpen);
   };
@@ -42,6 +34,7 @@ export default function Navbar() {
     setSelectedParent(menuKey);
   };
 
+  
   const handleSubItemClick = (menuKey: string) => {
     setSelectedParent(menuKey);
   };

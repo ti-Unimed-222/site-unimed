@@ -175,3 +175,159 @@
     transform: scale(0.6)
 }
 
+
+@media (max-width: 768px) {
+.linha-divisao{
+    flex-direction: column;
+}
+    .line {
+        font-size: 11px;
+    }
+    .centrais {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 3vw;
+        justify-content: center;
+        padding: 50;
+        font-size: 14;
+        border-right: none;
+        
+    }
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+    }
+    .rodape2 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 3vw;
+    }
+    .data {
+        font-size: 10px;
+        text-align: center;
+    }
+    .siganos {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .apps {
+        
+        transform: scale(0.7);
+        margin-bottom: 50;
+    }
+
+    .coop {
+        margin-top: 350;
+        margin-left: 0;
+        transform: scale(0.8);
+    }
+    
+    .ans {
+        margin-top: -20;
+        margin-left: 0;
+        transform: scale(0.8);
+    }
+    
+    .ansn {
+        margin-left: -30;
+        margin-top: 0;
+        transform: scale(0.6);
+
+    }
+    
+    .data{
+        align-items: center;
+        justify-content: center ;
+        margin-top: 47;
+        padding-right: 100;
+        font-size: 10;
+        color: rgba(0, 0, 0, 0.733);
+        margin-left: 70;
+    }
+    
+    .whatsapp{
+        transform: scale(1.9);
+        margin-top: 4;
+        margin-right: 12;
+        margin-left: 7;
+        margin-bottom: 12px;
+    }
+    
+    .phone{
+        margin-right: 12;
+        margin-bottom: 12px;
+    }
+    .clock{
+        margin-right: 12;
+        margin-bottom: 12px;
+    }
+    .mail{
+        display: block;
+        margin-right: 10;
+        margin-bottom: 12px;
+    }
+    .info-phone {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.5);
+    
+    }
+    
+    .info-whats {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.5);;
+        margin-left: 10px;
+    
+    }
+    
+    .info-clock {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.5);;
+    
+    }
+    .info-clock2 {
+        display: flex;
+        display: flex;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.5);;
+        margin-left:40
+    }
+    
+    .info-mail {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.5);;
+        margin-left: 80px;
+    }
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        font-size: 18;
+        margin-bottom: 20;
+        color: rgba(0, 0, 0, 0.644);
+        font-weight: 400;
+        margin-left: 40;
+        font-weight: 600;
+    
+    }
+    
+    .clock2{
+        margin-right: 12;
+        margin-bottom: 12px;
+        margin-left: 30px;
+    }
+    
+}

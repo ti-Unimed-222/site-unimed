@@ -193,3 +193,127 @@
     font-weight: 600;
     transition: 300ms;
   }
+
+  @media screen and (max-width: 768px) {
+    .fundo {
+        height: auto;
+    }
+    .imagem {
+        height: 40vw;
+        background-size: contain;
+    }
+    .text1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    .text2 {
+        font-size: 3vw;
+        text-align: center;
+    }
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1, .container2 {
+        width: 90%;
+        height: auto;
+    }
+    .botao {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagem {
+        display: flex;
+        position: relative;
+        width: 1200px;
+        overflow: hidden;
+        height: 110vw;
+        justify-content: center;
+        background-image: url('./fundo.png'); 
+        background-size: 100%; 
+        background-attachment: scroll;
+        background-repeat: no repeat ;
+        word-wrap: break-word;
+    }
+
+    .botao {
+        font-size: 12px;
+        transform: scale(1);
+    }
+    .saibamais {
+        padding: 7px 30px;
+        font-size: 12px;
+    }
+
+    .planos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text1, .text2{
+        position: relative;
+        display: flex;
+        z-index: 2; 
+        align-items: center;
+        justify-content: center;
+        color: white; 
+        padding: 20px;
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 0;
+        list-style-type: none; 
+        margin-top: -5;
+        line-height: 1;
+        margin-left: -10px;
+    }
+    
+    
+    
+    .text1{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    
+    .text2 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 20px;
+        margin-top: -10;
+    }
+    
+    
+    .botão {
+    
+        position: relative;
+        z-index: 2;
+        background-color: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 6px 10px;
+        cursor: pointer;
+        display: block;
+        margin: 24px;
+        margin-left: 0;
+        font-weight: bolder;
+        margin-top: 9px;
+        font-size: 13px;
+        transform: scale(1.3);
+        transition: all 300ms ease-in-out;
+        justify-content: center;;
+        width: 150px;
+        margin-left: 20px;
+    }
+    
+    
+
+}

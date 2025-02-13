@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 768px) {
-    container-class {
+    .container-class {
         height: auto; 
         padding: 20px;
     }

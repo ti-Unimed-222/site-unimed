@@ -13,6 +13,7 @@
     font-weight: 600;
     margin-bottom: 1vw;
     color: rgba(0, 0, 0, 0.678);
+    
 }
 
 .line{
@@ -27,4 +28,21 @@
 }
 .href:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .rodape1 {
+        flex-direction: column;
+        padding: 5vw;
+        transform: scale(1);
+    }
+    .titulos {
+        font-size: 17px;
+        justify-content: flex-start;
+    }
+    .href {
+        font-size: 17px;
+        justify-content: flex-start;
+
+    }
 }

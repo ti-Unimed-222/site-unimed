@@ -10,9 +10,7 @@
   }
   
   .baner {
-    width: 100%;
     height:auto;  
-    max-width: 100%;
     object-fit: cover; 
     flex-shrink: 0;
     display: flex;
@@ -61,4 +59,26 @@
 
 
 
+  @media screen and (max-width: 768px) {
+    .servicos-container {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .baner {
+      display: none;
+    }
+
+    .services-items {
+        flex-direction: column;
+        gap: 40px;
+        transform: scale(1);
+        align-items: center;
+    }
+
+    .boleto, .guia, .plano, .portal, .fale, .atendimento {
+        margin-top: 20px;
+        margin-left: -50;
+    }
+}
 
