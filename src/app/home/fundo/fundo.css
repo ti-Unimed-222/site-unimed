@@ -10,7 +10,7 @@
 .imagem {
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     height: 30vw;
     justify-content: center;

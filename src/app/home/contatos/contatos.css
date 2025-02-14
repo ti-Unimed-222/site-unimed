@@ -10,6 +10,7 @@
     width: 100%;
     gap: 50px;
     position: relative;
+    overflow: hidden;
 }
   
 .baner {
