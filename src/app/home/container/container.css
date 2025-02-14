@@ -1,24 +1,39 @@
 .container-class {
     background-color: rgb(235, 235, 235);
-    width: 99.2vw;
-    height: 350px;
+    width: 100vw;
+    height: auto;
     display: flex;
-    margin-bottom: 70;
+    margin-bottom: 90;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
+    gap:90;
 }
-
+.cont{
+    display: flex;
+    margin: 20;
+    margin-bottom: 70;
+}
 .textos {
     display: flex;
     list-style-type: none;
     margin-top: 80;
     justify-content: center;
-    gap:20;
+    gap:70;
     text-align: center; 
 
 }
 
+.programas{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .prog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10;
     font-size: 40;
     font-weight: bolder;
@@ -27,7 +42,10 @@
 }
 
 .prog-text {
-    margin-left: 50;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     font-size: 20;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center; 
@@ -35,11 +53,21 @@
 }
 
 .linha2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 50;
+}
+.sustentabilidade{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sust {
-    margin-left: 50;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10;
     font-size: 40;
     font-weight: bolder;
@@ -48,15 +76,27 @@
 }
 
 .sust-text {
-    margin-left: 50;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     font-size: 20;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    text-align: center; 
   word-wrap: break-word;
 }
 
+.trabalhe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+
 .trab {
-    margin-left: 50;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10;
     font-size: 40;
     font-weight: bolder;
@@ -65,14 +105,20 @@
 }
 
 .trab-text {
-    margin-left: 50;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     font-size: 20;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    text-align: center; 
   word-wrap: break-word;
 }
 
 .acesso{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     border: 1px solid green;
     padding: 9px 20px;
@@ -90,6 +136,31 @@
 }
 
 @media (max-width: 768px) {
+    .container-class {
+        padding: 20px;
+        height: auto; 
+    }
+
+    .textos {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .prog, .sust, .trab {
+        font-size: 30px; 
+    }
+
+    .prog-text, .sust-text, .trab-text {
+        font-size: 16px; 
+    }
+
+    .acesso {
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
+@media screen and (max-width: 480px) {
     .container-class {
         padding: 20px;
         height: auto; 

@@ -1,16 +1,22 @@
 
 .centrais{
-    margin-right: 200;
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 5;
     border-right: 1px solid rgba(0, 0, 0, 0.158);
-    width: 50vw;
-    height: 16vw;
+    width: 80%;
+    height: 16%;
     padding: 50;
     font-size: 14;
 
 }
+
+.linha-divisao{
+    display: flex;
+    width: 100%;
+
+}
+
 .rodape {
     justify-content: center;
     margin-top: 3vw;

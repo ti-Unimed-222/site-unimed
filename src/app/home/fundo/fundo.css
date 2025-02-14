@@ -207,7 +207,7 @@
         background-size: cover;
         display: flex;
         position: relative;
-        width: 700px;
+        width: 100;
         overflow: hidden;
         height: 700px;
         justify-content: center;
@@ -302,9 +302,9 @@
     .imagem {
         display: flex;
         position: relative;
-        width: 1200px;
+        width: 100%;
         overflow: hidden;
-        height: 110vw;
+        height: 70%;
         justify-content: center;
         background-image: url('./fundo.png'); 
         background-size: cover; 
@@ -315,10 +315,12 @@
     .botao {
         font-size: 12px;
         transform: scale(1);
+        margin-left: 700px;
     }
     .saibamais {
         padding: 7px 30px;
         font-size: 12px;
+        
     }
 
     .planos{
@@ -335,13 +337,11 @@
         justify-content: center;
         color: white; 
         padding: 20px;
-
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-left: 0;
         list-style-type: none; 
         margin-top: -5;
         line-height: 1;
-        margin-left: 60px;
+        margin-left: 200px;
     }
     
     
@@ -354,6 +354,7 @@
         font-size: 30px;
         font-weight: 600;
         padding-right: 40;
+        width: 260;
         
     }
     
@@ -364,6 +365,7 @@
         display: flex;
         font-size: 20px;
         margin-top: -10;
+        width: 250;
     }
     
     
@@ -387,7 +389,7 @@
         transition: all 300ms ease-in-out;
         justify-content: center;;
         width: 150px;
-        margin-left: 20px;
+        margin-left: 240px;
     }
     
     
