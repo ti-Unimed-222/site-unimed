@@ -120,10 +120,12 @@
 
 }
 .info-clock2 {
+    list-style-type: none;
+    display: flex;
     justify-content: center;
     margin-bottom: 12px;
     color: rgba(0, 0, 0, 0.5);;
-    margin-left:40
+    margin-left:30
 }
 
 .info-mail {
@@ -148,6 +150,7 @@
 }
 
 .clock2{
+    list-style-type: none;
     margin-right: 12;
     margin-bottom: 12px;
     margin-left: 30px;
@@ -299,7 +302,7 @@
     
     }
     .info-clock2 {
-        display: flex;
+        list-style-type: none;
         display: flex;
         margin-bottom: 12px;
         color: rgba(0, 0, 0, 0.5);;
@@ -328,6 +331,8 @@
     }
     
     .clock2{
+        list-style-type: none;
+        display: flex;
         margin-right: 12;
         margin-bottom: 12px;
         margin-left: 20px;
