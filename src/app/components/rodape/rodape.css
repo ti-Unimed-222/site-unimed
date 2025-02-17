@@ -8,18 +8,18 @@
     height: 16%;
     padding: 50;
     font-size: 14;
-
+    overflow: hidden;
 }
 
 .linha-divisao{
     display: flex;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .rodape {
     justify-content: center;
-    margin-top: 3vw;
+    overflow: hidden;
 }
 
 .rodape-container {
@@ -28,12 +28,13 @@
     gap: 5vw;
     justify-content: center;
     margin: 1vw;
-
+    overflow: hidden;
 }
 
 .linha-divisao{
     display: flex;
     margin-bottom: -10px;
+    overflow: hidden;
 }
 
 
@@ -49,6 +50,7 @@
     margin-bottom: -20;
     height: 110;
     font-family: Poppins, sans-serif;
+    overflow: hidden;
 }
 
 .coop {
@@ -165,7 +167,7 @@
 
 .siganos{
     padding-top: 50;
-
+    overflow: hidden;
     list-style-type: none;
 
 }

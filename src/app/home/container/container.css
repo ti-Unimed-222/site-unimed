@@ -1,6 +1,6 @@
 .container-class {
     background-color: rgb(235, 235, 235);
-    width: 100vw;
+    width:99.2vw;
     height: auto;
     display: flex;
     margin-bottom: 90;
@@ -13,14 +13,17 @@
     display: flex;
     margin: 20;
     margin-bottom: 70;
+    overflow: hidden;
 }
 .textos {
+    width: 100vw;
     display: flex;
     list-style-type: none;
     margin-top: 80;
     justify-content: center;
     gap:70;
     text-align: center; 
+    overflow: hidden;
 
 }
 

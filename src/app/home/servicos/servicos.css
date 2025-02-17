@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
   }
   
   .services-items {
@@ -27,7 +28,7 @@
     position: relative;
     display: flex;
     list-style-type: none;
-    margin-top: -50px; 
+    margin-top: -3vw; 
     gap: 80;
     transform: scale(0.7);
     
