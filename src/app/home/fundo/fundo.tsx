@@ -34,7 +34,7 @@ const Fundo = () => {
                     onMouseLeave={() => setHovered(null)}
                 >
                         <div className="familia">
-                            <Image src={Familia} alt="familia" style={{ border: '5px', borderTopLeftRadius: '6px', borderTopRightRadius: '6px' }} />
+                            <Image src={Familia} alt="familia" width={1000} style={{ border: '0.4vw', borderTopLeftRadius: '0.4vw', borderTopRightRadius: '0.4vw' }} />
                             <li className="texto1">
                                 <h3>Plano individual ou familiar para<br />
                                     cuidar bem da sua saúde e da<br />
@@ -54,7 +54,7 @@ const Fundo = () => {
                     onMouseLeave={() => setHovered(null)}
                 >
                         <div className="trabalho">
-                            <Image src={Trabalho} alt="trabalho" style={{ border: '5px', borderTopLeftRadius: '6px', borderTopRightRadius: '6px' }} />
+                            <Image src={Trabalho} alt="trabalho" width={1000} style={{ border: '0.4vw', borderTopLeftRadius: '0.4vw', borderTopRightRadius: '0.4vw' }} />
                             <li className="texto1">
                                 <h3>Plano empresarial para garantir <br />
                                     <span style={{ display: 'block', marginTop: '0px' }} /> os cuidados necessários e o bem-<br />
