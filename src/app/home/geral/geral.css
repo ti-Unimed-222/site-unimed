@@ -32,16 +32,26 @@
 @media (max-width: 768px) {
     .rodape1 {
         flex-direction: column;
-        padding: 5vw;
-        transform: scale(1);
+        padding: 0;
+        margin-top: 50;
+        
+    }
+
+    .rodape-container{
+        padding-top: 40;
+        padding-bottom: 40;
+        gap:1px
     }
     .titulos {
-        font-size: 17px;
-        justify-content: flex-start;
+        margin-left: 50;
+        font-size: 19px;
+        justify-content: center;
     }
-    .href {
-        font-size: 17px;
-        justify-content: flex-start;
-
+    .line{
+        margin-left: 70;
+        font-size: 17;
+    }
+    .Imprensa, .unimed{
+        margin-right: 40;
     }
 }

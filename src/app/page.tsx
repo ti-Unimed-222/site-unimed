@@ -1,4 +1,5 @@
 'use client';
+import './blog.css'
 import React, {useState} from "react";
 import Image from "next/image";
 import Navbar from "./components/navbar/navbar"
@@ -36,7 +37,7 @@ export default function Home() {
         <Container />
       </div>
 
-      <div className="blog">
+      <div className="blog-class">
         <a href="https://viverbem.unimed.coop.br/" target="_blank" rel="noopener noreferrer"><Image src={Blog} alt="blog" width={10000}></Image></a>
       </div>
 
