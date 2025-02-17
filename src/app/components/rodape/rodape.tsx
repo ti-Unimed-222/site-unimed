@@ -40,7 +40,7 @@ export default function Rodape() {
                     </li>
                 </div>
                 <div className='centrais-container2'>
-                    <li className='title'>Central de Vendas </li>
+                    <li className='title2'>Central de Vendas </li>
                     <li className='info-phone2'>
                         <Phone className='phone' />
                         (63) 3215-4090
