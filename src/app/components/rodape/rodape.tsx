@@ -68,13 +68,13 @@ export default function Rodape() {
             </div>
             <div className='rodape2'>
                 <li className='coop'>
-                    <a href='https://www.somos.coop.br/' target='_blank' rel='noopener noreferrer'><Image src={Coop} alt='coop' /></a>
+                    <a href='https://www.somos.coop.br/' target='_blank' rel='noopener noreferrer'><Image src={Coop} width={1000} alt='coop' /></a>
                 </li>
                 <li className='ans'>
-                    <a href='https://www.gov.br/ans/pt-br' target='_blank' rel='noopener noreferrer'><Image src={Ans} alt='ans' /></a>
+                    <a href='https://www.gov.br/ans/pt-br' target='_blank' rel='noopener noreferrer'><Image src={Ans} alt='ans'width={1000} /></a>
                 </li>
                 <li className='ansn'>
-                    <Image src={AnsN}  alt='ansn' />
+                    <Image src={AnsN}  alt='ansn' width={1000}/>
                 </li>
                 <div className='data'>
                 <li>
