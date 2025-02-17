@@ -28,7 +28,7 @@ export default function Rodape() {
                     <li className='info-whats
                     '>
                         <FontAwesomeIcon icon={faWhatsapp} className='whatsapp'/>
-                        (63) 3025-5810 - WhatsApp
+                          (63) 3025-5810 - WhatsApp
                     </li>
                     <li className='info-clock'>
                         <Clock className='clock' />

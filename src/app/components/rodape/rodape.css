@@ -279,7 +279,7 @@
         list-style-type: none;
         justify-content: center;
         border-top:1px solid rgba(0, 0, 0, 0.158);
-        width:99.2vw;
+        width:100vw;
         margin-bottom: -20;
         height: 110;
         font-family: Poppins, sans-serif;
@@ -314,164 +314,96 @@
     
     }
 }
-@media (max-width: 768px) {
-.linha-divisao{
-    flex-direction: column;
-}
-    .line {
-        font-size: 15px;
-    }
+/* Ajustes gerais para telas menores */
+@media screen and (max-width: 768px) {
     .centrais {
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 3vw;
-        justify-content: center;
-        padding: 50;
-        font-size: 14;
+        width: 90%;
+        gap: 5%;
+        font-size: 12px;
+        margin-left: 0;
         border-right: none;
-        
     }
-    .rodape-container {
+
+    .centrais-container {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
+        align-items: center;
     }
+
+    .centrais-container2{
+        align-items: center;
+        justify-content: center;
+        margin-left: 70;
+    }
+
+    .title{
+        align-items: center;
+        justify-content: center;
+        margin-left: 100;
+    }
+
     .rodape2 {
         flex-direction: column;
-        gap: 10px;
-        padding: 3vw;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: auto;
+        gap: 20px;
+
     }
+
     .data {
-        font-size: 10px;
+        font-size: 12px;
+        padding-left: 5vw;
+        padding-right: 5vw;
         text-align: center;
     }
+    .whatsapp{
+        transform: scale(2.2);
+        
+    }
+
+    .info-phone, .info-phone2, .info-whats, .info-clock, .info-mail {
+        align-items: flex-start;
+        text-align: flex-start;
+    }
+
     .siganos {
         flex-direction: column;
-        padding-top: 10px;
+        width: 80vw;
+        padding: 0px;
+        justify-content: center;
+        padding-left: 50;
+        align-items: center;
     }
+
+    .siganos-title {
+        font-size: 18px;
+    }
+    .linha-divisao{
+        flex-direction: column;
+    }
+
     .apps {
-        
-        transform: scale(0.7);
-        margin-bottom: 50;
+       
+        transform: scale(1);
+        justify-content: center;
+    }
+
+    .rodape-container{
+        flex-direction: column;
     }
 
     .coop {
-        margin-top: 350;
-        margin-left: 0;
-        transform: scale(0.8);
+        transform: scale(2.4);
     }
     
     .ans {
-        margin-top: -20;
-        margin-left: 0;
-        transform: scale(0.8);
+        transform: scale(2.4);
     }
     
     .ansn {
-        margin-left: -30;
-        margin-top: 0;
-        transform: scale(0.6);
-
+        transform: scale(2.4);
     }
-    
-    .data{
-        align-items: center;
-        justify-content: center ;
-        margin-top: 47;
-        padding-right: 100;
-        font-size: 10;
-        color: rgba(0, 0, 0, 0.733);
-        margin-left: 70;
-    }
-    .centrais-container2{
-        margin-left: -60;
-        align-items: center;
-    }
-    .whatsapp{
-        transform: scale(1.9);
-        margin-top: 4;
-        margin-right: 12;
-        margin-left: 7;
-        margin-bottom: 12px;
-    }
-    
-    .phone{
-        margin-right: 12;
-        margin-bottom: 12px;
-    }
-    .clock{
-        margin-right: 12;
-        margin-bottom: 12px;
-    }
-    .mail{
-        display: flex;
-        margin-right: 10;
-        margin-bottom: 12px;
-    }
-    .info-phone {
-        display: flex;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 12px;
-        color: rgba(0, 0, 0, 0.5);
-        margin-left: -10;
-    
-    }
-    
-    .info-whats {
-        display: flex;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 12px;
-        color: rgba(0, 0, 0, 0.5);;
-        margin-left: 10px;
-    
-    }
-    
-    .info-clock {
-        display: flex;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 12px;
-        color: rgba(0, 0, 0, 0.5);;
-    
-    }
-    .info-clock2 {
-        list-style-type: none;
-        display: flex;
-        margin-bottom: 12px;
-        color: rgba(0, 0, 0, 0.5);;
-        margin-left:30
-    }
-    
-    .info-mail {
-        display: flex;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 12px;
-        color: rgba(0, 0, 0, 0.5);;
-        margin-left: 80px;
-    }
-    
-    .title{
-        display: flex;
-        justify-content: center;
-        font-size: 18;
-        margin-bottom: 20;
-        color: rgba(0, 0, 0, 0.644);
-        font-weight: 400;
-        margin-left: 40;
-        font-weight: 600;
-    
-    }
-    
-    .clock2{
-        list-style-type: none;
-        display: flex;
-        margin-right: 12;
-        margin-bottom: 12px;
-        margin-left: 20px;
-    }
-    
 }
+
