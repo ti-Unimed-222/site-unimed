@@ -61,6 +61,8 @@
   
   @media (max-width: 768px) {
     .carousel-container {
+      border-top: 0;
+      width: 100vw;
       display: flex;
       max-width: 1000;
       overflow: hidden;

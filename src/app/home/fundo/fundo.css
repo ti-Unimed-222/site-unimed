@@ -78,7 +78,6 @@
     border-radius: 0.3vw;
     padding: 0.5vw 1vw;
     cursor: pointer;
-    display: block;
     margin: 20px auto;
     margin-left: 130px;
     font-weight: bolder;
@@ -193,104 +192,51 @@
     transition: 300ms;
   }
 
-@media screen and (max-width: 2024px) {
-    
-  }
 
-@media screen and (max-width: 480px) {
-    .imagem {
-        display: flex;
-        position: relative;
-        width: 100%;
+
+ /* Estilos para telas menores (mobile) */
+@media (max-width: 768px) {
+    .fundo {
+        width: 100vw;
         overflow: hidden;
-        height: 70%;
-        justify-content: center;
-        background-image: url('./fundo.png'); 
-        background-size: cover; 
-        background-attachment: scroll;
-        background-repeat: no repeat ;
-    }
-
-    .botao {
-        font-size: 12px;
-        transform: scale(1);
-        margin-left: 700px;
-    }
-    .saibamais {
-        padding: 7px 30px;
-        font-size: 12px;
+        height: 120vw; 
+        margin-top: 0px;
         
     }
-
-    .planos{
+    
+    .imagem {
+        width: 100vw;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .text1, .text2{
-        position: relative;
-        display: flex;
-        z-index: 2; 
-        align-items: center;
-        justify-content: center;
-        color: white; 
-        padding: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        list-style-type: none; 
-        margin-top: -5;
-        line-height: 1;
-        margin-left: 200px;
+        height: 150vw;
+        background-size: cover ;
     }
     
-    
-    
-    .text1{
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-        font-weight: 600;
-        padding-right: 40;
-        width: 260;
-        
+    .text1, .text2 {
+        margin-left: 0vw;
+        padding: 5vw;
     }
     
+    .text1 {
+        margin-top: -50;
+        font-size: 10vw;
+    }
     
     .text2 {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: 20px;
-        margin-top: -10;
-        width: 250;
+        font-size: 6vw;
     }
-    
     
     .botão {
-    
-        position: relative;
-        z-index: 2;
-        background-color: none;
-        color: white;
-        border: 1px solid white;
-        border-radius: 4px;
-        padding: 6px 10px;
-        cursor: pointer;
-        display: block;
-        margin: 24px;
-        margin-left: 0;
-        font-weight: bolder;
-        margin-top: 9px;
-        font-size: 13px;
-        transform: scale(1.3);
-        transition: all 300ms ease-in-out;
-        justify-content: center;;
-        width: 150px;
-        margin-left: 240px;
+        font-size: 4vw;
+        padding: 1.5vw 3vw;
+        margin-left: 5vw;
+        width: 45vw;
+        border-radius: 1vw;
     }
     
     
+    .container1, .container2 {
+        display: none;
+    }
 
 }
+

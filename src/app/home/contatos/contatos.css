@@ -47,4 +47,19 @@
     margin-top: -7px;
 }
 
-@media (max-width: 768px){}
+@media (max-width: 768px){
+    .container-contatos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sos, .contatos, .whats, .sac, .contratar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .contratar{
+        margin-left: 40px;
+    }
+}
