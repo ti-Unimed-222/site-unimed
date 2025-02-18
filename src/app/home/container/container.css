@@ -1,15 +1,17 @@
 .container-class {
     background-color: rgb(235, 235, 235);
-    width:99.2vw;
+    width:100vw;
     height: auto;
     display: flex;
     margin-bottom: 3vw;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    position: relative;
     gap:90;
+    max-width: 99.2vw;
 }
 .cont{
+    width: 100vw;
     display: flex;
     margin: 20;
     margin-bottom: 70;
