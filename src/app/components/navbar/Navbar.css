@@ -1,4 +1,3 @@
-
 .navbar {
   background-color: #ffffff;
   color: darkslategray;
@@ -9,25 +8,40 @@
   font-size: 20px;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
   position: fixed;
-  top: 0; 
-  left: -0;
-  width: 100vw; 
-  height: auto;
+  top: 0; /* Alinha no topo da página */
+  left: 0; /* Garante que fique no começo da tela */
+  width: 100%; 
+  height: 110px;
   z-index: 1000; 
-  margin-bottom: 10px;
-  overflow: hidden;
+  margin-bottom: 100px;
   
 }
 
-
-.menuicon{
-  display: none;
+.numero{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
+.search.focused {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 10000;
+  background-color: rgba(180, 180, 180, 0.205);
+  font-family: 'Poppins', sans-serif;
+  transition: all 1s ease-in-out;
+}
+
+.search:focus-within{
+  width: 900px;
+  -ms-transform-origin-x: left;
+}
 .logo {
   display: flex;
   align-items: center;
   transform: scale(0.9);
+  padding-right: 1vw;
 }
 
 .primeira-nav{
@@ -35,7 +49,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: -10px;
-  gap:15px
 }
 
 .logo img {
@@ -46,23 +59,19 @@
 .navbar-link {
   font-size: 15;
   display: flex;
-  gap: 80px;
+  gap: 20px;
   list-style: none;
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: -10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: -30px;
-  margin-right: 10vw;
 }
 
-.navbar-link:hover{
-  font-weight: 600;
-  color: black;
-}
 .nav {
   flex: center;
-  display: block;
+  padding: 15px 20px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -70,12 +79,13 @@
 .primeira-nav{
   width: -2vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+  gap: 15vw;
 }
 
 
 .navbar-link {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -103,12 +113,11 @@ button:hover {
 ul {
   display: none;
   position: absolute;
-  top: 110%; 
-  left: -30;
+  top: 100%; /* Mantém o dropdown logo abaixo do botão */
+  left: -1.3vw;
   background-color: white;
   list-style: none;
   padding: 10px 0;
-
   border-radius: 4px;
   min-width: 150px;
   z-index: 10;
@@ -127,6 +136,8 @@ ul li a {
 ul li:hover {
   background-color: #f7f7f7;
 }
+
+/* Corrige hover para cada dropdown */
 
 
 .drop2:hover .servicosDrop {
@@ -152,6 +163,12 @@ ul li:hover {
   transition: color 0.3s;
 
   
+}
+
+.navbar-link a:hover {
+  color: black;
+
+
 }
 
 .bots{
@@ -196,6 +213,10 @@ ul li:hover {
   width: 400;
 }
 
+.numero.hidden, .login.hidden {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
 
 .search-icon {
   color: #333;
@@ -225,31 +246,29 @@ ul li:hover {
   
 }
 
-.numero-bt{
-  display: flex;
-  color: #333333c9;
-  font-size: 14;
-  font-weight: 600;
-  
-}
-
 
 .local {
   display: flex;
   gap:10px;
   align-items: center;
   justify-content: center;
+  margin-left: 0vw;
   height: 40px;
-  border-right: 1px solid rgba(0, 0, 0, 0.103);
-  padding: 8px 25px;
-  transition: all 0.3s ease-in-out;
+  border-left: 1px solid rgba(0, 0, 0, 0.103);
+  padding: 8px 12px;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: -40px;
   font-size: 13;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   list-style-type: none;
-  color: #333333a6;
-  font-weight: 600;
+  margin-left: -14vw;
 }
 
+.local:hover{
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+  color: black;
+}
 
 .drop1{
   gap: 6px;
@@ -308,16 +327,30 @@ ul li:hover {
 .dropdown-menu li:hover {
   background-color: #f0f0f0;
 }
+.navbar-collapse.show {
+  display: flex;
+
+}
+
+.menuicon {
+  display: none;
+  color: black;
+}
+
+.navbar-collapse {
+  display: flex;
+  transition: all 1s ease-in-out;
+
+}
 
 @media (max-width: 768px) {
   .navbar {
-    width: 100vw;
-    height: 22vw;
     display: flex;
-    padding: 10px 10px;
+    height: 90px;
+    padding: 10px 15px;
     align-items: flex-start;
     box-shadow: none; 
-    position: relative;
+    position: fixed;
     background-color: white;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
   }
@@ -365,12 +398,12 @@ ul li:hover {
 
   .navbar-collapse {
     position: fixed;
-  top: 140;
+  top: 70;
   left: -100%;
   width: 100vw; 
-  height: 40vh;
+  height: 100vh;
   background: white;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); ;
+  box-shadow: none;
   transition: left 0.5s ease-in-out;
   z-index: 1000;
   }
@@ -379,7 +412,6 @@ ul li:hover {
     display: flex;
     transition: all 1s ease-in-out;
     left: 0;
-    width: 100vw; 
   }
 
 
@@ -493,8 +525,8 @@ ul li:hover {
   }
   .home, .servicos, .portais, .planos{
     color:#333;
-    font-size: 15;
-    margin-left: 30;
+    font-size: 25;
+    margin-left: 50;
   }
   .home:hover, .servicos:hover, .portais:hover, .planos:hover{
     color: black;
@@ -522,4 +554,3 @@ ul li:hover {
   position: relative;
 }
 }
-

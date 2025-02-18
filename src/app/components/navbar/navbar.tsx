@@ -46,7 +46,13 @@ export default function Navbar() {
       </div>
       <div className="nav-container">
         <div className="primeira-nav">
-          
+        <div className="numero">
+            <button className='numero-bt'>
+            <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'>
+            (63) 3025-5810
+            </a>
+            </button>
+          </div>
           <div className='local'>
               <MapPin className='localicon' />
               <li><a href='https://www.google.com/maps/@-10.2089722,-48.3376582,17z?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D'>
@@ -54,13 +60,7 @@ export default function Navbar() {
               </a>
               </li>
             </div>
-            <div className="numero">
-            <button className='numero-bt'>
-            <a href='https://api.whatsapp.com/send/?phone=%2B556330255810&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'>
-            (63) 3025-5810
-            </a>
-            </button>
-          </div>
+            
         </div>
 
         <div className="navbar-toggle" onClick={toggleMenu }>
