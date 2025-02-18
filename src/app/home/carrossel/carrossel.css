@@ -66,10 +66,9 @@
       display: flex;
       max-width: 1000;
       overflow: hidden;
+      margin-top: 110;
     }
     .carousel-image {
-      width: 100vw;
-      height: auto;
-      max-height: 450px; 
+      background-size: auto ;
     }
   }
