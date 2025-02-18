@@ -28,7 +28,7 @@
 .rodape-container {
     display: flex;
     list-style-type: none;
-    gap: 5px;
+    gap: 5vw;
     justify-content: center;
     margin: 1vw;
     overflow: hidden;

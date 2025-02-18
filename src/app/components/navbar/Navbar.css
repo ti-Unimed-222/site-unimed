@@ -350,9 +350,12 @@ ul li:hover {
     padding: 10px 15px;
     align-items: flex-start;
     box-shadow: none; 
-    position: fixed;
     background-color: white;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
+    left: 0;
+    right: 0;
+    justify-content: center;
+    width: 100%;
   }
 
   .logo{
@@ -397,13 +400,14 @@ ul li:hover {
   }
 
   .navbar-collapse {
+    border-radius: 10px;
     position: fixed;
-  top: 70;
+  top: 80;
   left: -100%;
-  width: 100vw; 
-  height: 100vh;
+  width: 60vw; 
+  height: 50vh;
   background: white;
-  box-shadow: none;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
   transition: left 0.5s ease-in-out;
   z-index: 1000;
   }
@@ -501,7 +505,7 @@ ul li:hover {
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     box-shadow: none;
-    font-size: 13;
+    font-size: 11;
     margin-left: 20;
   }
 
@@ -521,12 +525,12 @@ ul li:hover {
     
   }
   .home {
-    margin-top: 50;
+    margin-top: 20;
   }
   .home, .servicos, .portais, .planos{
     color:#333;
-    font-size: 25;
-    margin-left: 50;
+    font-size: 15;
+    margin-left: 0;
   }
   .home:hover, .servicos:hover, .portais:hover, .planos:hover{
     color: black;
